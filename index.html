@@ -15,22 +15,67 @@
 <body>
 
     <!-- HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
-    <header class="conteiner-fluid">
-        <div class="row h-100">
-            <div class="col-2 h-100">
-                <img class="img__logo" src="./images/logo.jpg" alt="logo">
+    <header class="conteiner-fluid position-sticky top-0 bg-white">
+        <div class="row d-sm-flex flex-sm-column">
+            <div class="col-sm-12">
+                <img class="mx-sm-auto d-sm-block img__logo" src="./images/logo.png" alt="logo">
             </div>
-            <nav class="col-10 h-100">
-                <ul class="d-flex justify-content-evenly">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="./html/sucursales.html">SUCURSALES</a></li>
-                    <li><a href="./html/venta.html">VEHICULOS EN VENTA</a></li>
-                    <li><a href="./html/promociones.html">PROMOCIONES</a></li>
-                    <li><a href="./html/contacto.html">CONTACTO</a></li>
+            <nav class="col-sm-12">
+                <ul class=" mt-sm-3 d-sm-flex align-items-sm-center justify-content-sm-evenly  list-unstyled ">
+                    <li><a class="text-decoration-none" href="#">Inicio</a></li>
+                    <li><a class="text-decoration-none" href="#">Sucursales</a></li>
+                    <li><a class="text-decoration-none" href="#">Vehiculos en venta</a></li>
+                    <li><a class="text-decoration-none" href="#">Promociones</a></li>
+                    <li><a class="text-decoration-none" href="#">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
+        </div>       
     </header>
+
+    <!-- CUADRO DE BUSQUEDA PRINCIPAL  -->
+    <section class="d-sm-flex-column bg-primary mx-sm-auto mt-sm-3 rounded-4 " id="sect-princ">
+
+        <article class="d-sm-flex align-items-sm-center justify-content-sm-start ms-sm-4">
+            <div class="mt-sm-2">
+                <img class="ms-sm-2 img-busq" src="./images/busca_auto.png" alt="buscador auto">
+            </div>
+            <h5 class="mt-sm-3">BUSCÁ TU VEHICULO</h5>
+        </article>    
+            
+        <article class="d-sm-flex align-items-sm-center justify-content-sm-center">
+
+                <!-- SELECT PARA QUE EL USUARIO INGRESE EL AUTO QUE QUIERA BUSCAR -->
+                    <select class="me-sm-2" name="tipo" id="tipo">
+                        <option value="tipo">TIPO</option>
+                        <option value="4x4">4X4</option>
+                        <option value="suv">Suv</option>
+                        <option value="auto">Auto</option>
+                        <option value="moto">Moto</option>
+                    </select>
+            
+                    <select class="me-sm-2" name="marca" id="marca">
+                        <option value="marca">MARCA</option>
+                        <option value="volkswagen">volkswagen</option>
+                        <option value="ford">ford</option>
+                        <option value="honda">honda</option>
+                        <option value="toyota">toyota</option>
+                        <option value="chevrolet">chevrolet</option>
+                    </select>
+
+                    <select class="me-sm-2" name="modelo" id="modelo">
+                        <option value="modelo">MODELO</option>
+                        <option value="4x4">4X4</option>
+                        <option value="suv">Suv</option>
+                        <option value="auto">Auto</option>
+                        <option value="moto">Moto</option>
+                    </select>
+                    <div>
+                        <img class="lup-busq mb-sm-1" src="./images/search.png" alt="lupa buscador" >
+                    </div>
+
+        </article>
+
+    </section>
 
 
 

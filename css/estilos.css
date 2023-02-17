@@ -9,6 +9,42 @@ padding: 0;
 }
 
 header{
-    height: 15vh;
+    height: 150px;
     width: 100vw;
 }
+
+.img-busq{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* Media querys para responsive */
+
+
+
+ /* //Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #sect-princ{
+        height: 120px;
+        width: 400px;
+    }
+
+    .lup-busq{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
