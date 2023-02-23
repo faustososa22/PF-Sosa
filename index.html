@@ -6,139 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autos de la Plaza</title>
 
-    <!-- LINKEADO EL CSS y BOOTSTRAP -->
+    <!-- LINKEADO EL CSS, BOOTSTRAP Y AOS.JS -->
+    <link rel="shortcut icon" href="./images/favicon.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
+
     <!-- HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
     <header class="position-sticky top-0 bg-white z-1">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                    <img class="ms-3 img__logo" src="./images/logo.png" alt="logo">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/sucursales.html">Sucursales</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/venta.html">Vehiculos en venta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/promociones.html">Promociones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./html/contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
+                <img class="ms-3 img__logo" src="./images/logo.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./html/sucursales.html">Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./html/venta.html">Vehiculos en venta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./html/promociones.html">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./html/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
+
+    <!-- IMAGEN QUE SOLO APARECE EN VIEW XXL Y OCUPA TODO EL VIEWPORT -->
+
+    <img src="./images/buscas.jpg" class="img-princ d-none d-xxl-block" alt="">
+
+
     <!-- CUADRO DE BUSQUEDA PRINCIPAL  -->
-    <section class="d-flex-column mx-auto mt-4 rounded-4" id="sect-princ">
+    <!-- PRIMER BLOQUE CON TITULO E ICONO  -->
+    <section class="d-flex-column mx-auto mt-4 rounded-4 mb-5" id="sect-princ">
 
         <article class="d-flex align-items-center justify-content-center">
             <div class="mt-3">
-                <img class="img-auto-busq" src="./images/busca_auto.png" alt="buscador auto">
+                <img data-aos="zoom-in" class="img-auto-busq" src="./images/busca_auto.png" alt="buscador auto">
             </div>
-            <h5 class="mt-4 ms-2 text-white">BUSCÁ TU VEHICULO</h5>
+            <p data-aos="zoom-in" class="mt-4 ms-2 text-white h4">BUSCÁ TU VEHICULO</p>
         </article>    
-            
+        
+        <!-- SEGUNDO BLOQUE CON SELECTS E ICONO DE BUSQUEDA -->
         <article class="d-flex flex-column align-items-center d-md-flex flex-md-row justify-content-md-evenly align-items-md-center">
 
-                <!-- SELECT PARA QUE EL USUARIO INGRESE EL AUTO QUE QUIERA BUSCAR -->
-                    <select class="mt-3 form-select" name="tipo" id="tipo">
-                        <option value="tipo">TIPO</option>
-                        <option value="4x4">4X4</option>
-                        <option value="suv">Suv</option>
-                        <option value="auto">Auto</option>
-                        <option value="moto">Moto</option>
-                    </select>
-            
-                    <select class="mt-3 form-select " name="marca" id="marca">
-                        <option value="marca">MARCA</option>
-                        <option value="volkswagen">volkswagen</option>
-                        <option value="ford">ford</option>
-                        <option value="honda">honda</option>
-                        <option value="toyota">toyota</option>
-                        <option value="chevrolet">chevrolet</option>
-                    </select>
-
-                    <select class="mt-3 form-select" name="modelo" id="modelo">
-                        <option value="modelo">MODELO</option>
-                        <option value="4x4">4X4</option>
-                        <option value="suv">Suv</option>
-                        <option value="auto">Auto</option>
-                        <option value="moto">Moto</option>
-                    </select>
-                    <div>
-                        <img class="mt-4 lup-busq mt-lg-3" src="./images/search.png" alt="lupa buscador" >
-                    </div>
+            <!-- SELECT PARA QUE EL USUARIO INGRESE EL TIPO QUE QUIERA BUSCAR -->
+            <select class="mt-3 form-select" name="tipo" id="tipo">
+                <option value="tipo">TIPO</option>
+                <option value="4x4">4X4</option>
+                <option value="suv">Suv</option>
+                <option value="auto">Auto</option>
+                <option value="moto">Moto</option>
+            </select>
+            <!-- SELECT PARA QUE EL USUARIO INGRESE LA MARCA QUE QUIERA BUSCAR -->
+            <select class="mt-3 form-select " name="marca" id="marca">
+                <option value="marca">MARCA</option>
+                <option value="volkswagen">volkswagen</option>
+                <option value="ford">ford</option>
+                <option value="honda">honda</option>
+                <option value="toyota">toyota</option>
+                <option value="chevrolet">chevrolet</option>
+            </select>
+            <!-- SELECT PARA QUE EL USUARIO INGRESE EL MODELO QUE QUIERA BUSCAR -->
+            <select class="mt-3 form-select" name="modelo" id="modelo">
+                <option value="modelo">MODELO</option>
+                <option value="4x4">4X4</option>
+                <option value="suv">Suv</option>
+                <option value="auto">Auto</option>
+                <option value="moto">Moto</option>
+            </select>
+            <div>
+                <img data-aos="zoom-in" class="mt-4 lup-busq mt-md-3" src="./images/search.png" alt="lupa buscador" >
+            </div>
 
         </article>
 
     </section>
 
     
-        <!-- SECCIÓN 2 - AUTOS EN VENTA -->
-        <main class="container">
+        <!-- CONTENIDO PRINCIPAL - AUTOS EN VENTA -->
+        <!-- POSICIONAMOS LAS CARDS PARA QUE SEAN RESPONSIVE Y SE COLOQUEN DE CIERTA FORMA DEPENDIENDO TAMAÑO DE PANTALLA -->
+        <main class="container-fluid">
 
             <div class="row d-flex flex-column align-items-center justify-content-center d-md-flex flex-md-row justify-content-md-center align-items-md-center">
 
-                <div class="card mx-5 mt-5 mb-5">
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
                     <img src="./images/cruze.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Cruze</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 100.000</p>
+                        <a href="#" class="btn btn-primary">$6.000.000</a>
                     </div>
                 </div>
 
-                <div class="card mx-5 mt-5 mb-5">
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
                     <img src="./images/onix.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Onix</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 50.000</p>
+                        <a href="#" class="btn btn-primary">$3.000.000</a>
                     </div>
                 </div>
 
-
-                <div class="card mx-5 mt-5 mb-5">
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
                     <img src="./images/cruze.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Cruze</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 100.000</p>
+                        <a href="#" class="btn btn-primary">$6.000.000</a>
                     </div>
                 </div>
 
-                <div class="card mx-5 mt-5 mb-5">
-                    <img src="./images/cruze.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-
-                </div>
-
-                <div class="card mx-5 mt-5 mb-5">
-                    <img src="./images/cruze.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
+                    <img src="./images/onix.jpg" class="card-img-top" alt="...">
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Onix</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 60.000</p>
+                        <a href="#" class="btn btn-primary">$3.000.000</a>
                     </div>
                 </div>
 
-                <div class="card mx-5 mt-5 mb-5">
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
                     <img src="./images/cruze.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Cruze</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 100.000</p>
+                        <a href="#" class="btn btn-primary">$6.000.000</a>
                     </div>
+                </div>
 
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
+                    <img src="./images/onix.jpg" class="card-img-top" alt="...">
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Onix</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 60.000</p>
+                        <a href="#" class="btn btn-primary">$3.000.000</a>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
+                    <img src="./images/cruze.jpg" class="card-img-top" alt="...">
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Cruze</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 100.000</p>
+                        <a href="#" class="btn btn-primary">$6.000.000</a>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="card col col-sm-6 col-lg-4 col-xl-3 col-xxl-4 mx-3 mt-3 mb-3">
+                    <img src="./images/onix.jpg" class="card-img-top" alt="...">
+                    <div class="card-body lh-1">
+                        <h5 class="card-title">Chevrolet Onix</h5>
+                        <p class="card-text">Combustible: Nafta</p>
+                        <p class="card-text">Kilometros: 60.000</p>
+                        <a href="#" class="btn btn-primary">$3.000.000</a>
+                    </div>
                 </div>
 
             </div>
@@ -146,18 +181,18 @@
 
 
 <!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
-
+<!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
 <footer class="container-fluid">
     <div class="text-white d-flex flex-column justify-content-center align-items-center d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
 
-        <div class="d-flex flex-column align-items-center justify-content-center mt-2">
-            <p class="h5">TODOS LOS SEGMENTOS</p>
+        <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
+            <p class="h4">TODOS LOS SEGMENTOS</p>
             <img class="img__logo img__logo__footer mb-1" src="./images/logo.png" alt="logo">
-            <p class="">NUEVOS Y USADOS</p>
+            <p class="h5 mt-2">NUEVOS Y USADOS</p>
         </div>
         
         <div class="d-flex flex-column justify-content-center align-items-center mb-4">
-            <p class="h5">¡Suscribíte y recibí novedades!</p>
+            <p class="h4">¡Suscribíte y recibí novedades!</p>
             <img src="./images/carta.png" alt="" class="img-ft-nw">
             <form class="d-flex justify-content-center align-items-center form-floating mt-1">
                 <input type="email" name="" id="" class="me-2 email-in">
@@ -165,20 +200,24 @@
             </form>
         </div>
         
-        <div class="d-none d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-start mt-lg-4">
-            <p class="lh-1 h5">PERMUTAS Y FINANCIACIÓN</p>
+        <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4">
+            <p class="lh-1 h4">PERMUTAS Y FINANCIACIÓN</p>
             <p class="lh-1">¿Dudas? Estamos para asesorarte.</p>
             <p class="lh-1">(3407)408952</p>
             <p class="lh-1">Juan B. Justo 1427, Ramallo (2915)</p>
             <p class="lh-1">E-mail: info@autosdelaplaza.com.ar</p>
         </div>
     </div>
-    <p class="text-white text-center mt-2">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
+    <p class="text-white text-center h6 ">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
 </footer> 
 
 
-<!-- LINKEO DE JS BOOTSTRAP -->
+<!-- LINKEO DE JS BOOTSTRAP Y AOS.JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>
