@@ -53,6 +53,7 @@ header{
     /* #476580 otro tono de azul*/
 }
 
+
 /* LE CAMBIO LAS MEDIDAS A LA CARD DE TODOS LOS AUTOS */
 .card {
     --bs-card-spacer-y: 1rem;
@@ -184,6 +185,40 @@ footer{
     border-radius: 100px !important;
 }
 
+/* <---------------- PAGINA SUCURSALES ---------------> */
+/* Cambio de medidas y fondo a la bienvenida de pagina */
+.sct-princ-sucursales{
+    width: 100vw !important;
+    background-color: #063157 !important;
+    height: 150px;
+}
+
+/* Cambio de medidas a la imagen de llantas de la bienvenida */
+.llantas-presentacion{
+    width: 100px;
+    height: 100px;
+}
+
+/* Cambio de meidas a la imagen de sucursal y a los mapas iframe */
+.img-sucursal{
+    width: 300px;
+    height: 300px;
+}
+
+/* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
+.text-section-sucursales{
+    width: 300px;
+    height: 240px;
+}
+
+/* le doy medidas a los iconos de telefono y ubicacion */
+.img-datos{
+    width: 30px;
+    height: 30px;
+}
+/* <---------------- PAGINA SUCURSALES ---------------> */
+
+
 
 
 /* Media querys para responsive */
@@ -208,6 +243,14 @@ footer{
         width: 100vw !important;
         height: 350px;
     }
+
+    /* <----- SEGUNDA PAGINA -----> */
+    /* Le cambio el tamaño a las letras con etiqueta P */
+    .p-texto{
+        font-size: 1.2rem;
+    }
+    /* <----- SEGUNDA PAGINA -----> */
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -217,6 +260,13 @@ footer{
         height: 150px;
         width: 600px;
     }
+    
+    /* <----- SEGUNDA PAGINA -----> */
+    /* Le cambio el tamaño a las letras con etiqueta P */
+    .p-texto{
+        font-size: 1.3rem;
+    }
+    /* <----- SEGUNDA PAGINA -----> */
     
 }
 
@@ -239,12 +289,47 @@ footer{
         font-size: 1.2rem;
         color: #063157;
     }
-    
+
+    /* <----- SEGUNDA PAGINA -----> */
+    /* Cambio medidas a la imagen de sucursal y los mapas iframe */
+    .img-sucursal{
+        width: 400px;
+        height: 400px;
+    }
+
+    /* le cambio el tamaño al cuadro de bienvenida de pagina */
+    .sct-princ-sucursales{
+        width: 100vw !important;
+        background-color: #063157 !important;
+        height: 250px;
+    }
+
+    /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
+    .text-section-sucursales{
+        width: 410px;
+        height: 240px;
+    }
+    /* le doy medidas a los iconos de telefono y ubicacion */
+    .img-datos{
+        width: 35px;
+        height: 35px;
+    }
+    /* le cambio el tamaño a la imagen de llantas del cuadro de bienvenida */
+    .llantas-presentacion{
+        width: 150px;
+        height: 150px;
+    }
+    /* <----- SEGUNDA PAGINA -----> */
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    
+     /* <----- SEGUNDA PAGINA -----> */
+     /* Le cambio el tamaño a los titulos h2 conozca, sucursal ramallo y san nicolas */
+    .titulos{
+        font-size: 2rem;
+    }
+     /* <----- SEGUNDA PAGINA -----> */
 }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
@@ -330,7 +415,7 @@ footer{
         width: 100vw;
         height: 90vh !important;
     }
-
+    /* cambio tamaño del logo del nav */
     .img__logo{
         width: 110px;
         height: 110px;
@@ -347,11 +432,36 @@ footer{
         font-size: 1.5rem;
         color: #063157;
     }
-
+    /* Cambio medidas al footer */
     footer{
         width: 100vw !important;
         height: 260px;
     }
-
+     /* <----- SEGUNDA PAGINA -----> */
+     /* cambio tamaño a la imagen de sucursal y los mapas iframe */
+    .img-sucursal{
+        width: 600px;
+        height: 600px;
+    }
+    /* cambio el tamaño al cuadro principal de bienvenida */
+    .sct-princ-sucursales{
+        width: 100vw !important;
+        background-color: #063157 !important;
+        height: 300px;
+    }
+    /* cambio el tamaño a los textos p */
+    .p-texto{
+        font-size: 2rem;
+    }   
+    /* cambio el tamaño a las llantas del cuadro principal de bienvenida */
+    .llantas-presentacion{
+        width: 200px;
+        height: 200px;
+    }
+    /* cambio tamaño al texto del footer */
+    .p-texto-ftr{
+        font-size: 1.3rem;
+    }
+     /* <----- SEGUNDA PAGINA -----> */
     
 }
