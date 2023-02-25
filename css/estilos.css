@@ -86,7 +86,6 @@ header{
     border: var(--bs-card-border-width) solid var(--bs-card-border-color);
     border-radius: var(--bs-card-border-radius);
     width: 18rem !important;
-    height: 24rem !important;
 }
 
 /* EDITO EL FORMULARIO TRAIDO DE BOOTSTRAP PARA QUE NO OCUPE EL 100% DEL WIDTH */
@@ -219,6 +218,15 @@ footer{
 /* <---------------- PAGINA SUCURSALES ---------------> */
 
 
+/* <---------------- PAGINA VENTA DE VEHICULOS ---------------> */
+.section-busqueda{
+    width: 200px;
+    height: 480px;
+}
+/* <---------------- PAGINA VENTA DE VEHICULOS ---------------> */
+
+
+
 
 
 /* Media querys para responsive */
@@ -278,6 +286,7 @@ footer{
         height: 220px;
     }
 
+    /* cambio de tamaño a las palabras del nav y cambio de color */
     .nav-link {
         display: block;
         padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -293,8 +302,8 @@ footer{
     /* <----- SEGUNDA PAGINA -----> */
     /* Cambio medidas a la imagen de sucursal y los mapas iframe */
     .img-sucursal{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
 
     /* le cambio el tamaño al cuadro de bienvenida de pagina */
@@ -365,7 +374,7 @@ footer{
         background-clip: border-box;
         border: var(--bs-card-border-width) solid var(--bs-card-border-color);
         border-radius: var(--bs-card-border-radius);
-        width: 25rem !important;
+        width: 20rem !important;
     }
     /* Cambio las medidas del input de email */
     .email-in{
@@ -421,6 +430,7 @@ footer{
         height: 110px;
     }
 
+    /* cambio tamaño de letras en nav y les doy color */
     .nav-link {
         display: block;
         padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -440,14 +450,14 @@ footer{
      /* <----- SEGUNDA PAGINA -----> */
      /* cambio tamaño a la imagen de sucursal y los mapas iframe */
     .img-sucursal{
-        width: 600px;
-        height: 600px;
+        width: 400px;
+        height: 400px;
     }
     /* cambio el tamaño al cuadro principal de bienvenida */
     .sct-princ-sucursales{
         width: 100vw !important;
         background-color: #063157 !important;
-        height: 300px;
+        height: 250px;
     }
     /* cambio el tamaño a los textos p */
     .p-texto{

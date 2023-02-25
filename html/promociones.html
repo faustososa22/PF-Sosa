@@ -5,82 +5,177 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autos de la Plaza</title>
-    <!-- LINK CON CSS -->
+    <!-- LINKEADO EL CSS, BOOTSTRAP Y AOS.JS -->
+    <link rel="shortcut icon" href="../images/favicon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
+        <!-- HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
 
-<!-- HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
-<header>
-    <h3>LOGO</h3>
-    <nav>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="sucursales.html">SUCURSALES</a></li>
-            <li><a href="venta.html">VEHICULOS EN VENTA</a></li>
-            <li><a href="promociones.html">PROMOCIONES</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-</header>
-<!-- FIN DEL HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
+            <header class="position-sticky top-0 bg-white z-1">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container">
+                        <img class="ms-3 img__logo" src="../images/logo.png" alt="logo">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./sucursales.html">Sucursales</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./venta.html">Vehiculos en venta</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./promociones.html">Promociones</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- FIN DEL HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
 
-<main>
-    <h2>PROMOCIONES</h2>
-    <p>Nuestras mejores ofertas</p>
-    <img src="" alt="autos decorativos">
-</main>
-
-<article>
-    <section>
-        <img src="../images/cruze.jpg" alt="chevrolet cruze">
-        <h2>Chevrolet Cruze</h2>
-        <h3>Año 2023</h3>
-        <h4>$6.000.000</h4>
-        <p>Más INFO</p>
-    </section>
-
-    <section>
-        <img src="../images/onix.jpg" alt="chevrolet onix">
-        <h2>Chevrolet Onix</h2>
-        <h3>Año 2023</h3>
-        <h4>$3.000.000</h4>
-        <p>Más INFO</p>
-    </section>
-</article>
-
-<!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
-<footer>
-    <div>
-        <h2>TODOS LOS SEGMENTOS</h2>
-        <img src="../images/logo.jpg" alt="logo autos de la plaza">
-    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-12">
+                    <div class="row">
+                        <!-- CARTEL PRINCIPAL DE LA PAGINA -->
+                        <section class=" col-12 container-fluid sct-princ-sucursales text-white d-flex flex-row justify-content-between align-items-center">
+                            <article class="d-flex flex-column ms-4">
+                                <p class="h2 mb-lg-4">Promociones</p>
+                                <p class="p-texto">Nuestras mejores ofertas</p>
+                            </article>
+                            <img src="../images/llantas.png" alt="autos" class="llantas-presentacion">
+                        </section>
     
-    <div>
-        <h2>NUEVOS Y USADOS</h2>
-        <p>¡Suscribíte y recibí novedades!</p>
-        <h3>NEWSLETTER</h3>
-        <form>
-            <input type="email" name="email" id="email" placeholder="Ingrese su correo">
-            <input type="button" value="Enviar">
-        </form>
-    </div>
-    
-    <div>
-        <h2>PERMUTAS Y FINANCIACIÓN</h2>
-        <P>¿Dudas? Estamos para asesorarte.</P>
-        <h3>(3407)408952</h3>
-        <h3>Juan B. Justo 1427, Ramallo (2915)</h3>
-        <h3>E-mail: info@autosdelaplaza.com.ar</h3>
-    </div>
-    
-    <div>
-        <p>Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
-    </div>
-    
-</footer>
+                    </div>
 
+                        <!-- Autos en promocion ordenados -->
+                        <div class="row d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-center align-items-md-center mt-5 mb-5">
+
+                            <div data-aos="flip-left" class="card mx-4 my-4">
+                                <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Cruze</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 100.000</p>
+                                    <a href="#" class="btn btn-primary">$6.000.000</a>
+                                </div>
+                            </div>
+
+                            <div data-aos="flip-left" class="card  mx-4 my-4">
+                                <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Onix</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 50.000</p>
+                                    <a href="#" class="btn btn-primary">$3.000.000</a>
+                                </div>
+                            </div>
+                        
+                            <div data-aos="flip-left" class="card mx-4 my-4">
+                                <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Cruze</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 100.000</p>
+                                    <a href="#" class="btn btn-primary">$6.000.000</a>
+                                </div>
+                            </div>
+
+                            <div data-aos="flip-left" class="card mx-4 my-4 ">
+                                <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Onix</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 50.000</p>
+                                    <a href="#" class="btn btn-primary">$3.000.000</a>
+                                </div>
+                            </div>
+
+                            <div data-aos="flip-left" class="card mx-4 my-4">
+                                <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Cruze</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 100.000</p>
+                                    <a href="#" class="btn btn-primary">$6.000.000</a>
+                                </div>
+                            </div>
+
+                            <div data-aos="flip-left" class="card  mx-4 my-4">
+                                <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Onix</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 50.000</p>
+                                    <a href="#" class="btn btn-primary">$3.000.000</a>
+                                </div>
+                            </div>
+                        
+                            <div data-aos="flip-left" class="card mx-4 my-4">
+                                <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Cruze</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 100.000</p>
+                                    <a href="#" class="btn btn-primary">$6.000.000</a>
+                                </div>
+                            </div>
+
+                            <div data-aos="flip-left" class="card mx-4 my-4 ">
+                                <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                                <div class="card-body lh-1">
+                                    <h5 class="card-title">Chevrolet Onix</h5>
+                                    <p class="card-text">Combustible: Nafta</p>
+                                    <p class="card-text">Kilometros: 50.000</p>
+                                    <a href="#" class="btn btn-primary">$3.000.000</a>
+                                </div>
+                            </div>
+                        </div>
+                </main>
+
+                <!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
+                <!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
+                <footer class="container">
+                    <div class="text-white d-flex flex-column justify-content-center align-items-center d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
+
+                        <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
+                            <p class="h4">TODOS LOS SEGMENTOS</p>
+                            <img class="img__logo img__logo__footer mb-1" src="../images/logo.png" alt="logo">
+                            <p class="h5 mt-2">NUEVOS Y USADOS</p>
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                            <p class="h4">¡Suscribíte y recibí novedades!</p>
+                            <img src="../images/carta.png" alt="" class="img-ft-nw">
+                            <form class="d-flex justify-content-center align-items-center form-floating mt-1">
+                                <input type="email" name="" id="" class="me-2 email-in">
+                                <button type="button" class="btn btn-primary btn-ftr">ENVIAR</button>
+                            </form>
+                        </div>
+
+                        <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4">
+                            <p class="lh-1 h4">PERMUTAS Y FINANCIACIÓN</p>
+                            <p class="lh-1 p-texto-ftr">¿Dudas? Estamos para asesorarte.</p>
+                            <p class="lh-1 p-texto-ftr">(3407)408952</p>
+                            <p class="lh-1 p-texto-ftr">Juan B. Justo 1427, Ramallo (2915)</p>
+                            <p class="lh-1 p-texto-ftr">E-mail: info@autosdelaplaza.com.ar</p>
+                        </div>
+                    </div>
+                    <p class="text-white text-center h6 ">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
+                </footer>
+            </div>
+        </div>
+
+
+<!-- LINKEO DE JS BOOTSTRAP Y AOS.JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>
