@@ -54,6 +54,7 @@ header{
 }
 
 
+
 /* LE CAMBIO LAS MEDIDAS A LA CARD DE TODOS LOS AUTOS */
 .card {
     --bs-card-spacer-y: 1rem;
@@ -389,6 +390,11 @@ footer{
         width: 950px;
     }
 
+    /* cuando se agranda la pantalla, achico el div que contiene los autos para que solo se formen filas de a 4 autos */
+    .contenedor-autos{
+        width: 1500px;
+    }
+
     /* cambio el tamaño de las letras de los select en el cuadro de busqueda principal */
     .form-select {
         --bs-form-select-bg-img: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e);
@@ -447,6 +453,9 @@ footer{
         width: 100vw !important;
         height: 260px;
     }
+
+    
+
      /* <----- SEGUNDA PAGINA -----> */
      /* cambio tamaño a la imagen de sucursal y los mapas iframe */
     .img-sucursal{
