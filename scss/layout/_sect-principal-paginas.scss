@@ -1,0 +1,79 @@
+/* Cambio de medidas y fondo a la bienvenida de pagina */
+.sct-princ-sucursales{
+    width: 100vw;
+    background-color: #063157;
+    height: 15rem;
+
+    /*cambio tamaño de titulo*/
+    h2{
+        font-size: 2.3rem;
+    }
+
+    /* Cambio de medidas a la imagen de llantas de la bienvenida */
+    .llantas-presentacion{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    /*PANTALLA > 768PX*/
+    @include responsive(map-get($breakpoints, md)){
+        /* le cambio el tamaño a la imagen de llantas del cuadro de bienvenida */
+        .llantas-presentacion{
+            width: 12rem;
+            height: 12rem;
+        }
+
+        h2{
+            font-size: 2.8rem;
+        }
+    }
+
+    /*PANTALLA > 992PX*/
+    @include responsive(map-get($breakpoints, lg)){
+        /* le cambio el tamaño a la imagen de llantas del cuadro de bienvenida */
+        .llantas-presentacion{
+            width: 13rem;
+            height: 13rem;
+        }
+
+        h2{
+            font-size: 3rem;
+        }
+
+        .p-sect-princ{
+            font-size: 2.3rem;
+        }
+    }
+
+}
+
+/*PANTALLA > 768PX*/
+@include responsive(map-get($breakpoints, md)){
+    /*cambio el alto del cuadro de bienvenida*/
+    .sct-princ-sucursales{
+        height: 20rem;
+    }
+}
+
+
+/*PANTALLA > 1500PX*/
+@include responsive(map-get($breakpoints, xxl)){
+    /*cambio el alto del cuadro de bienvenida*/
+    .sct-princ-sucursales{
+        height: 23rem;
+
+        h2{
+            font-size: 3.5rem;
+        }
+
+        .p-sect-princ{
+            font-size: 2.5rem;
+        }
+        
+        /* cambio el tamaño a las llantas del cuadro principal de bienvenida */
+        .llantas-presentacion{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+}

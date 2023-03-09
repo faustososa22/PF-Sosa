@@ -1,0 +1,32 @@
+/* Le doy tamaño al header */
+header{
+    height: 10vh;
+    width: 100vw;
+
+}
+
+/* Cambio el tamaño de la imagen */
+.img__logo{
+    width: 8.5rem;
+    height: 8.5rem;
+}
+
+
+/*PANTALLA > 768PX*/
+@include responsive(map-get($breakpoints, md)){
+    /*cambiamos medidas al logo*/
+    .img__logo{
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+}
+
+/*PANTALLA > 1200PX*/
+@include responsive(map-get($breakpoints, xl)){
+    /*cambiamos medidas al logo*/
+    .img__logo{
+        width: 10.5rem;
+        height: 10.5rem;
+    }
+}
+

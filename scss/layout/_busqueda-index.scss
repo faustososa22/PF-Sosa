@@ -1,0 +1,77 @@
+/* DIMENSIONO EL CUADRO DE BUSQUEDA Y CAMBIO COLOR DE FONDO */
+.sect-princ{
+    height: 24rem;
+    width: 35rem;
+    background-color: #063157;
+    margin-top: 6rem;
+
+    /* Cambio el tamaño del auto de busqueda */
+    .img-auto-busq{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /* Cambio el tamaño de la lupa de busqueda */
+    .lup-busq{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+}
+    /*PANTALLA > 576PX*/
+    @include responsive(map-get($breakpoints, sm)){
+        /* Medidas al cuadro de busqueda */
+        .sect-princ{
+            width: 40rem;
+            height: 25.5rem;
+    
+            /* medidas al icono de lupa */
+            .lup-busq{
+                width: 4rem;
+                height: 4rem;
+            }
+
+            /* Cambio el tamaño del auto de busqueda */
+            .img-auto-busq{
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+        }
+    }
+
+    /*PANTALLA > 768PX*/
+    @include responsive(map-get($breakpoints, md)){
+        /* Medidas al cuadro de busqueda */
+        .sect-princ{
+            width: 70rem;
+            height: 15rem;
+    
+            /* medidas al icono de lupa */
+            .lup-busq{
+                width: 4.5rem;
+                height: 4.5rem;
+            }
+            .form-select{
+                width: 18rem;
+                height: 4.3rem;
+                font-size: 2.3rem;
+            }
+        }
+
+    }
+
+    /*PANTALLA > 1200PX*/
+    @include responsive(map-get($breakpoints, xl)){
+        /* Medidas al cuadro de busqueda */
+        .sect-princ{
+            margin-top: 6rem;
+            width: 90rem;
+            height: 17rem;
+
+            .form-select{
+                width: 22rem;
+            }
+        }
+
+    }
+

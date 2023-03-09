@@ -1,0 +1,85 @@
+/*  Le doy color y medidas al footer */
+footer{
+    background-color: #063157;
+    width: 100vw;
+    height: 32rem;
+
+    /* Le doy fondo y estilo al logo del foter */
+    .img__logo__footer{
+        background-color: #fff;
+        border-radius: 10rem;
+    }
+
+    /* Le doy tamaño y estilo al input del email */
+    .email-in{
+        width: 15rem;
+        height: 3.8rem;
+        border-color: #063157;
+        border-radius: .5rem;
+        font-size: 2rem;
+    }
+
+    /* Le cambio el color del fondo al boton de enviar que esta en el footer */
+    .btn-ftr{
+        background-color: #fff !important;
+        color: #063157;
+
+        /* Cuando ponemos el mouse encima del boton, cambia de color */
+        &:hover {
+            color: #fff !important;
+            background-color: green !important;
+        }
+    }
+
+    /* Le doy medida a la imagen del footer de la carta */
+    .img-ft-nw{
+        height: 4rem;
+        width: 5rem;
+    }
+
+    h4{
+        font-size: 2.5rem;
+    }
+
+    h5{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: .6rem;
+    }
+
+    /*PANTALLA > 1200px*/
+    @include responsive(map-get($breakpoints, xl)){
+        /*cambiamos medidas al logo*/
+        /* Le doy tamaño y estilo al input del email */
+        .email-in{
+            width: 18rem;
+        }
+    }
+
+}
+
+/*PANTALLA > 768PX*/
+@include responsive(map-get($breakpoints, md)){
+    /*cambiamos medidas al logo*/
+    footer{
+        height: 20rem;
+
+        /* Le doy medida a la imagen del footer de la carta */
+        .img-ft-nw{
+            height: 5.5rem;
+            width: 6.5rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

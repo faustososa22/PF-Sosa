@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autos de la Plaza</title>
+    <meta name= "description" content="Conocé la sucursal más cercana a vos.">
+    <meta name="keywords" content="sucursal, consecionaria, ramallo, san nicolas, buenos aires, bsas, vehiculo, moto, camioneta, auto, tienda">
+    <title>Sucursales | Autos de la Plaza</title>
 
     <!-- LINKEADO EL CSS, BOOTSTRAP Y AOS.JS -->
-    <link rel="shortcut icon" href="./images/favicon.jpg">
+    <link rel="shortcut icon" href="../images/favicon.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 <header class="position-sticky top-0 bg-white z-1">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-            <img class="ms-3 img__logo" src="../images/logo.png" alt="logo">
+            <img class="ms-3 img__logo" src="../images/logo.webp" alt="logo de la empresa">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,54 +41,57 @@
 <!-- CONTENIDO PRINCIPAL DE LA PAGINA - ES EL MAS IMPORTANTE -->
 <main>
     <!-- CARTEL PRINCIPAL DE LA PAGINA -->
-    <section class="container-fluid sct-princ-sucursales text-white d-flex flex-row justify-content-between align-items-center animate__animated animate__backInDown">
+    <section class="container-fluid sct-princ-sucursales text-white d-flex flex-row justify-content-between align-items-center animate__animated animate__backInDown mt-xl-3">
         <article class="d-flex flex-column ms-4">
-            <p class="h2 mb-lg-4">Sucursales</p>
-            <p class="p-texto">Conocé nuestra empresa</p>
+            <h2 class="mb-lg-4">Sucursales</h2>
+            <p class="p-sect-princ">Conocé nuestra empresa</p>
         </article>
-        <img src="../images/llantas.png" alt="autos" class="llantas-presentacion">
+        <img src="../images/llantas.webp" alt="llantas decorativas" class="llantas-presentacion">
     </section>
 
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
-    <section class="container-fluid mt-5">
+    <section class="container-fluid section-conozca">
         <article class="d-flex flex-column justify-content-center align-items-center text-white d-md-flex flex-md-row ">
-            <img src="../images/sucursal.jpg" alt="foto de sucursal fundada" class="img-sucursal rounded-4">
-            <div class="d-flex flex-column justify-content-center align-items-center text-section-sucursales mt-5 mt-md-1 ms-md-3 ms-lg-5">
-                <p class="h3 mb-3 titulos">CONOZCA <span class="text-primary-emphasis" data-aos="zoom-out-left">AUTOS DE LA PLAZA</span></p>
+            <img src="../images/sucursal.webp" alt="foto de sucursal fundada" class="img-sucursal img-sucursal-princ rounded-4">
+            <div class=" texto-conozca d-flex flex-column justify-content-center align-items-center ms-3 ms-md-5 mt-md-5">
+                <h3 class="mb-4 mb-md-2 titulos">CONOZCA <span class="text-emphasis" data-aos="zoom-out-left">AUTOS DE LA PLAZA</span></h3>
                 <p class="p-texto">Abriendo sus puertas al público en 2019, Autos de la plaza, ha brindado el servicio de venta y permuta de vehículos multimarca. Buscamos que nos elijas no solo por los mejores precios, sino por el buen trato.</p>
             </div>
         </article>
     </section>
 
-    <section class="text-white d-flex flex-column justify-content-center align-items-center mt-5 d-md-flex flex-md-row " data-aos="zoom-in">
+    <!-- SECTION SUCURSAL RAMALLO -->
+    <section class="text-white d-flex flex-column justify-content-center align-items-center d-md-flex flex-md-row section-1" data-aos="zoom-in">
         <article class="d-flex flex-column justify-content-center align-items-center">
-            <p class="h3 titulos mb-4">SUCURSAL RAMALLO</p>
+            <h3 class="titulos mb-3">SUCURSAL RAMALLO</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.6031188673887!2d-60.0107697849795!3d-33.48568228076383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9fde06388193b%3A0x5840c732858fca76!2sAutos%20de%20la%20plaza!5e0!3m2!1ses!2sar!4v1673923678697!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-4 img-sucursal"></iframe>
         </article>
-        <article class="d-flex flex-column justify-content-center align-items-start mt-1 ms-md-3 text-section-sucursales ms-lg-5">
+
+        <article class="d-flex flex-column justify-content-center align-items-start mt-5 ms-md-4 text-section-sucursales ms-lg-5">
             <div class="d-flex flex-row justify-content-center align-items-center">
-                <img src="../images/mapa.png" alt="" class="img-datos" data-aos="flip-right">
-                <p class="mt-3 ms-1 p-texto">San Martin 1286, Ramallo, Buenos A.</p>
+                <img src="../images/mapa.webp" alt="mapa decorativo" class="img-datos mb-md-3" data-aos="flip-right">
+                <p class=" ms-1 p-texto">San Martin 1286, Ramallo, Buenos A.</p>
             </div>
             <div class="d-flex flex-row justify-content-center align-items-center">
-                <img src="../images/telefono.png" alt="" class="img-datos" data-aos="flip-right">
-                <p class="mt-3 ms-1 p-texto">(3407)408952</p>
+                <img src="../images/telefono.webp" alt="telefono decorativo" class="img-datos mb-md-3" data-aos="flip-right">
+                <p class="ms-1 p-texto">(3407)408952</p>
             </div>
         </article>
     </section>
-
-    <section class="text-white d-flex flex-column justify-content-center align-items-center mt-5 d-md-flex flex-md-row mb-md-5" data-aos="zoom-in">
+    
+    <!-- SECTION SUCURSAL SAN NICOLAS -->
+    <section class="text-white d-flex flex-column justify-content-center align-items-center d-md-flex flex-md-row section-2" data-aos="zoom-in">
         <article class="d-flex flex-column justify-content-center align-items-center">
-            <p class="h3 titulos mb-4">SUCURSAL SAN NICOLAS</p>
+            <h3 class="titulos mb-3">SUCURSAL SAN NICOLAS</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.309315660527!2d-60.22548478498367!3d-33.33686798080654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7673fe001d99f%3A0x2f2cffb0bc59dc72!2sAutos%20de%20la%20Plaza!5e0!3m2!1ses!2sar!4v1673923864288!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-4 img-sucursal"></iframe>
         </article>
-        <article class="d-flex flex-column justify-content-center align-items-start mt-1 ms-md-3 text-section-sucursales ms-lg-5">
+        <article class="d-flex flex-column justify-content-center align-items-start mt-5 ms-md-3 text-section-sucursales ms-lg-5">
             <div class="d-flex flex-row justify-content-center align-items-center">
-                <img src="../images/mapa.png" alt="" class="img-datos" data-aos="flip-right">
+                <img src="../images/mapa.webp" alt="mapa decorativo" class="img-datos" data-aos="flip-right">
                 <p class="mt-3 ms-1 p-texto ">De la Nación 487, San Nicolás, Buenos A.</p>
             </div>
             <div class="d-flex flex-row justify-content-center align-items-center">
-                <img src="../images/telefono.png" alt="" class="img-datos" data-aos="flip-right">
+                <img src="../images/telefono.webp" alt="telefono decorativo" class="img-datos" data-aos="flip-right">
                 <p class="mt-3 ms-1 p-texto">(0336)4037551</p>
             </div>
         </article>
@@ -98,33 +102,33 @@
 <!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
 <!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
 <footer class="container-fluid">
-    <div class="text-white d-flex flex-column justify-content-center align-items-center d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
+    <div class="text-white d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
 
         <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
-            <p class="h4">TODOS LOS SEGMENTOS</p>
-            <img class="img__logo img__logo__footer mb-1" src="../images/logo.png" alt="logo">
-            <p class="h5 mt-2">NUEVOS Y USADOS</p>
+            <h4 class="">TODOS LOS SEGMENTOS</h4>
+            <img class="img__logo img__logo__footer mb-1" src="../images/logo.webp" alt="logo de la empresa">
+            <h5 class="mt-2">NUEVOS Y USADOS</h5>
         </div>
         
         <div class="d-flex flex-column justify-content-center align-items-center mb-4">
-            <p class="h4">¡Suscribíte y recibí novedades!</p>
-            <img src="../images/carta.png" alt="" class="img-ft-nw">
+            <h4 class="">¡Suscribíte y recibí novedades!</h4>
+            <img src="../images/carta.webp" alt="imagen de un sobre-email" class="img-ft-nw">
             <form class="d-flex justify-content-center align-items-center form-floating mt-1">
                 <input type="email" name="" id="" class="me-2 email-in">
                 <button type="button" class="btn btn-primary btn-ftr">ENVIAR</button>
             </form>
         </div>
         
-        <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4">
-            <p class="lh-1 h4">PERMUTAS Y FINANCIACIÓN</p>
-            <p class="lh-1 p-texto-ftr">¿Dudas? Estamos para asesorarte.</p>
-            <p class="lh-1 p-texto-ftr">(3407)408952</p>
-            <p class="lh-1 p-texto-ftr">Juan B. Justo 1427, Ramallo (2915)</p>
-            <p class="lh-1 p-texto-ftr">E-mail: info@autosdelaplaza.com.ar</p>
+        <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4 mt-xl-5">
+            <h4 class="">PERMUTAS Y FINANCIACIÓN</h4>
+            <p class="p-ftr">¿Dudas? Estamos para asesorarte.</p>
+            <p class="p-ftr">(3407)408952</p>
+            <p class="p-ftr">Juan B. Justo 1427, Ramallo (2915)</p>
+            <p class="p-ftr">E-mail: info@autosdelaplaza.com.ar</p>
         </div>
     </div>
-    <p class="text-white text-center h6 ">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
-</footer> 
+    <p class="text-white text-center">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
+</footer>
 
 <!-- LINKEO DE JS BOOTSTRAP Y AOS.JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

@@ -1,0 +1,80 @@
+/*H1 PRINCIPAL*/
+.title-princ{
+    font-size: 3rem;
+}
+
+.text-section-sucursales{
+    width: 30rem;
+    height: 30rem;
+}
+
+.titulos{
+    font-size: 3rem;
+}
+
+/*PANTALLA > 576PX*/
+@include responsive(map-get($breakpoints, sm)){
+
+    /*MARGENES A LOS SECTIONS DE SUCURSALES*/
+    .section-sucursal{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .title-princ{
+        font-size: 3.3rem;
+    }
+
+    .titulos{
+        font-size: 3rem;
+    }
+
+    .p-texto{
+        font-size: 2.2rem;
+    }
+    
+}
+
+/*PANTALLA > 992PX*/
+@include responsive(map-get($breakpoints, lg)){
+    .section-sucursal{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .title-princ{
+        font-size: 3.5rem;
+    }
+
+    .titulos{
+        font-size: 3.2rem;
+    }
+
+    .p-texto{
+        font-size: 2.5rem;
+    }
+
+    
+}
+
+/*PANTALLA > 1200PX*/
+@include responsive(map-get($breakpoints, xxl)){
+
+    .title-princ{
+        font-size: 3.5rem;
+    }
+
+    .titulos{
+        font-size: 3.2rem;
+    }
+
+    .p-texto{
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+
+
+

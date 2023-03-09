@@ -1,0 +1,16 @@
+/* BOOTSTRAP*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* BASE */
+@import "./base/reset";
+@import "./base/general";
+
+/* LAYOUT */
+@import "./layout/pagindex";
+
+/*PAGINA SUCURSALES*/
+@import "./layout/pagsucursales";
+
+/*PAGINA VENTA DE VEHICULOS*/
+@import "./layout/pagventa";

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autos de la Plaza</title>
+    <meta name= "description" content="Encontrá tu auto ideal en Autos de la Plaza.">
+    <meta name="keywords" content="autos, onix, cruze, precio, nuevos, usados, vehiculo, moto, camioneta, auto, tienda, buscador">
+    <title>Venta | Autos de la Plaza</title>
+    
     <!-- LINKEADO EL CSS, BOOTSTRAP Y AOS.JS -->
-    <link rel="shortcut icon" href="../images/favicon.jpg">
+    <link rel="shortcut icon" href="../images/favicon.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <!-- HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
@@ -19,7 +21,7 @@
     <header class="position-sticky top-0 bg-white z-1">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <img class="ms-3 img__logo" src="../images/logo.png" alt="logo">
+                <img class="ms-3 img__logo" src="../images/logo.webp" alt="logo de la empresa">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,20 +53,20 @@
                             <p class="h2 mb-lg-4">Vehículos en venta</p>
                             <p class="p-texto">Nuestros vehículos en venta</p>
                         </article>
-                        <img src="../images/llantas.png" alt="autos" class="llantas-presentacion">
+                        <img src="../images/llantas.webp" alt="llantas decorativas" class="llantas-presentacion">
                     </section>
 
                 </div>
 
                 <!-- Separo contenido principal en dos, buscador y autos -->
-                <div class="row d-flex flex-column justify-content-center align-items-center d-md-flex flex-md-row justify-content-md-center align-items-md-start">
+                <div class="row d-flex flex-column justify-content-center align-items-center d-md-flex flex-md-row justify-content-md-around align-items-md-start">
                     <!-- Section del buscador -->
-                    <section class="col-12 d-flex flex-column justify-content-center align-items-center section-busqueda col-md-3 mt-md-5 col-xl-2">
-                        <h2 class="text-white mt-md-5">BÚSQUEDA</h2>
+                    <section class="col-12 d-flex flex-column justify-content-center align-items-center section-busqueda col-md-4 col-lg-3 col-xl-2">
+                        <h2 class="text-white h2-sect-busq">BÚSQUEDA</h2>
 
                         <form class="d-flex flex-column justify-content-center align-items-center">
                             <!-- DESPLEGABLE PARA ELEGIR TIPO DE VEHICULO -->
-                            <select name="tipo" id="tipo" class="form-select mt-3">
+                            <select name="tipo" id="tipo" class="form-select mt-3 mt-xl-3 rounded-4">
                                 <option value="tipo">TIPO</option>
                                 <option value="4x4">4x4</option>
                                 <option value="suv">SUV</option>
@@ -73,54 +75,54 @@
                             </select>
 
                             <!-- DESPLEGABLE PARA ELEGIR CONDICION -->
-                            <select name="condicion" id="condicion" class="form-select mt-3">
+                            <select name="condicion" id="condicion" class="form-select mt-3 mt-xl-4 rounded-4">
                                 <option value="condicion">CONDICIÓN</option>
                                 <option value="nuevo">NUEVO-0KM</option>
                                 <option value="usado">USADO</option>
                             </select>
 
                             <!-- DESPLEGABLE PARA ELEGIR MARCA -->
-                            <select name="marca" id="marca" class="form-select mt-3">
+                            <select name="marca" id="marca" class="form-select mt-3 mt-xl-4 rounded-4">
                                 <option value="marca">MARCA</option>
                             </select>
 
                             <!-- DESPLEGABLE PARA ELEGIR MODELO -->
-                            <select name="modelo" id="modelo" class="form-select mt-3">
+                            <select name="modelo" id="modelo" class="form-select mt-3 mt-xl-4 rounded-4">
                                 <option value="modelo">MODELO</option>
                             </select>
                             
                             
                             <!-- DESPLEGABLE PARA ELEGIR AÑO -->
-                            <select name="anio" id="anio" class="form-select mt-3">
+                            <select name="anio" id="anio" class="form-select mt-3 mt-xl-4 rounded-4">
                                 <option value="anio">AÑO</option>
                             </select>
 
                             <!-- DESPLEGABLE PARA ELEGIR TRANSMICION -->
-                            <select name="transmicion" id="transmicion" class="form-select mt-3">
+                            <select name="transmicion" id="transmicion" class="form-select mt-3 mt-xl-4 rounded-4">
                                 <option value="transmicion">TRANSMICION</option>
                                 <option value="manual">MANUAL</option>
                                 <option value="automatico">AUTOMATICO</option>
                             </select>
 
                             <!-- DESPLEGABLE PARA ELEGIR COMBUSTIBLE -->
-                            <select name="combustible" id="combustible" class="form-select mt-3">
+                            <select name="combustible" id="combustible" class="form-select mt-3 mt-xl-4 rounded-4">
                                 <option value="combustible">COMBUSTIBLE</option>
                                 <option value="nafta">NAFTA</option>
                                 <option value="gas">GAS</option>
                             </select>
 
                             <!-- BOTONES PARA ENVIAR Y PARA BORRAR DATOS -->
-                            <div class="mt-3 d-flex flex-row justify-content-evenly align-items-lg-center">
-                                <input type="button" value="ENVIAR" class="btn bg-white col-6">
-                                <input type="reset" value="BORRAR" class="btn bg-white col-6 ms-2">
+                            <div class="mt-3 d-flex flex-row justify-content-evenly align-items-lg-center mt-xl-4">
+                                <input type="button" value="ENVIAR" class="btn btn-busq bg-white col-6 rounded-4">
+                                <input type="reset" value="BORRAR" class="btn btn-busq bg-white col-6 ms-2 rounded-4">
                             </div>
                         </form>
                     </section>
                     <!-- AUTOS - NUEVA FILA -->
-                    <div class="row d-flex flex-column justify-content-center align-items-center mt-5 mb-5 flex-md-row col-md-9 col-xl-10">
+                    <div class="row d-flex flex-column justify-content-center align-items-center mt-5 mb-5 flex-md-row col-md-8 col-lg-9 col-xl-10 div-autos">
 
-                        <div data-aos="flip-left" class="card mx-2 my-2">
-                            <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card mx-3 my-3 mx-md-2 my-md-2">
+                            <img src="../images/cruze.webp" class="card-img-top" alt="auto chevrolet cruze">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Cruze</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -129,8 +131,8 @@
                             </div>
                         </div>
 
-                        <div data-aos="flip-left" class="card  mx-2 my-2">
-                            <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card  mx-3 my-3 mx-md-2 mx-md-2">
+                            <img src="../images/onix.webp" class="card-img-top" alt="auto chevrolet onix">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Onix</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -139,8 +141,8 @@
                             </div>
                         </div>
                     
-                        <div data-aos="flip-left" class="card mx-2 my-2">
-                            <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card mx-3 my-3 mx-md-2 my-md-2">
+                            <img src="../images/cruze.webp" class="card-img-top" alt="auto chevrolet cruze">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Cruze</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -149,8 +151,8 @@
                             </div>
                         </div>
 
-                        <div data-aos="flip-left" class="card mx-2 my-2 ">
-                            <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card mx-3 my-3 mx-md-2 my-md-2 ">
+                            <img src="../images/onix.webp" class="card-img-top" alt="auto chevrolet onix">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Onix</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -159,8 +161,8 @@
                             </div>
                         </div>
 
-                        <div data-aos="flip-left" class="card mx-2 my-2">
-                            <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card mx-3 my-3 mx-md-2 my-md-2">
+                            <img src="../images/cruze.webp" class="card-img-top" alt="auto chevrolet cruze">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Cruze</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -169,8 +171,8 @@
                             </div>
                         </div>
 
-                        <div data-aos="flip-left" class="card  mx-2 my-2">
-                            <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card  mx-3 my-3 mx-md-2 my-md-2">
+                            <img src="../images/onix.webp" class="card-img-top" alt="auto chevrolet onix">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Onix</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -179,8 +181,8 @@
                             </div>
                         </div>
                     
-                        <div data-aos="flip-left" class="card mx-2 my-2">
-                            <img src="../images/cruze.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card mx-3 my-3 mx-md-2 my-md-2">
+                            <img src="../images/cruze.webp" class="card-img-top" alt="auto chevrolet cruze">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Cruze</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -189,8 +191,8 @@
                             </div>
                         </div>
 
-                        <div data-aos="flip-left" class="card mx-2 my-2 ">
-                            <img src="../images/onix.jpg" class="card-img-top" alt="...">
+                        <div data-aos="flip-left" class="card mx-3 my-3 mx-md-2 my-md-2 ">
+                            <img src="../images/onix.webp" class="card-img-top" alt="auto chevrolet onix">
                             <div class="card-body lh-1">
                                 <h5 class="card-title">Chevrolet Onix</h5>
                                 <p class="card-text">Combustible: Nafta</p>
@@ -207,35 +209,35 @@
         </div>
     </div>
             <!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
-            <!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
-            <footer class="container-fluid">
-                <div class="text-white d-flex flex-column justify-content-center align-items-center d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
+<!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
+<footer class="container-fluid">
+    <div class="text-white d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
 
-                    <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
-                        <p class="h4">TODOS LOS SEGMENTOS</p>
-                        <img class="img__logo img__logo__footer mb-1" src="../images/logo.png" alt="logo">
-                        <p class="h5 mt-2">NUEVOS Y USADOS</p>
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-center align-items-center mb-4">
-                        <p class="h4">¡Suscribíte y recibí novedades!</p>
-                        <img src="../images/carta.png" alt="" class="img-ft-nw">
-                        <form class="d-flex justify-content-center align-items-center form-floating mt-1">
-                            <input type="email" name="" id="" class="me-2 email-in">
-                            <button type="button" class="btn btn-primary btn-ftr">ENVIAR</button>
-                        </form>
-                    </div>
-
-                    <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4">
-                        <p class="lh-1 h4">PERMUTAS Y FINANCIACIÓN</p>
-                        <p class="lh-1 p-texto-ftr">¿Dudas? Estamos para asesorarte.</p>
-                        <p class="lh-1 p-texto-ftr">(3407)408952</p>
-                        <p class="lh-1 p-texto-ftr">Juan B. Justo 1427, Ramallo (2915)</p>
-                        <p class="lh-1 p-texto-ftr">E-mail: info@autosdelaplaza.com.ar</p>
-                    </div>
-                </div>
-                <p class="text-white text-center h6 ">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
-            </footer>
+        <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
+            <h4 class="">TODOS LOS SEGMENTOS</h4>
+            <img class="img__logo img__logo__footer mb-1" src="../images/logo.webp" alt="logo de la empresa">
+            <h5 class="mt-2">NUEVOS Y USADOS</h5>
+        </div>
+        
+        <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+            <h4 class="">¡Suscribíte y recibí novedades!</h4>
+            <img src="../images/carta.webp" alt="imagen de un sobre-email" class="img-ft-nw">
+            <form class="d-flex justify-content-center align-items-center form-floating mt-1">
+                <input type="email" name="" id="" class="me-2 email-in">
+                <button type="button" class="btn btn-primary btn-ftr">ENVIAR</button>
+            </form>
+        </div>
+        
+        <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4 mt-xl-5">
+            <h4 class="">PERMUTAS Y FINANCIACIÓN</h4>
+            <p class="p-ftr">¿Dudas? Estamos para asesorarte.</p>
+            <p class="p-ftr">(3407)408952</p>
+            <p class="p-ftr">Juan B. Justo 1427, Ramallo (2915)</p>
+            <p class="p-ftr">E-mail: info@autosdelaplaza.com.ar</p>
+        </div>
+    </div>
+    <p class="text-white text-center">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
+</footer>
         
     
     <!-- LINKEO DE JS BOOTSTRAP Y AOS.JS -->

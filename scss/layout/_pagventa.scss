@@ -1,0 +1,67 @@
+@import "../component/card-pagventa";
+.section-busqueda{
+    margin-top: 3rem;
+
+    .h2-sect-busq{
+        font-size: 2.5rem;
+    }
+}
+
+.div-autos{
+    width: 50rem;
+}
+
+/*PANTALLA > 992PX*/
+@include responsive(map-get($breakpoints, lg)){
+    .div-autos{
+        width: 70rem;
+    }
+    
+}
+
+/*PANTALLA > 1200PX*/
+@include responsive(map-get($breakpoints, xl)){
+    .div-autos{
+        width: 93rem;
+    }
+
+    .section-busqueda{
+        margin-left: 5rem;
+
+        .form-select{
+            font-size: 2.3rem;
+            height: 5rem;
+        }
+        
+        .h2-sect-busq{
+            font-size: 3rem;
+        }
+    }
+    .btn-busq{
+        width: 13rem;
+    }
+    
+    
+}
+
+/*PANTALLA > 1500X*/
+@include responsive(map-get($breakpoints, xxl)){
+    .div-autos{
+        width: 110rem;
+    }
+
+    
+}
+
+/*PANTALLA > 1700X*/
+@include responsive(map-get($breakpoints, xxxl)){
+    .div-autos{
+        width: 150rem;
+    }
+
+    .form-select{
+        height: 6rem;
+        width: 35rem;
+
+    }
+}
