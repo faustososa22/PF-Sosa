@@ -5,6 +5,7 @@
    * Copyright 2011-2022 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #063157;
@@ -9046,6 +9047,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+/*ABSTRACT*/
+/*VARIABLES*/
+/*VARS*/
+/*importo google fonts ROBOTO*/
 /* BASE */
 /* Reset al html */
 * {
@@ -9053,7 +9058,12 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0; }
 
+/*FUNCION RESPONSIVE*/
+/*LE PASAMOS UN MAP POR PARAMETRO CON VALOR DEL MIN-WIDTH PANTALLA*/
 /*VARS*/
+* {
+  font-family: "Roboto", sans-serif; }
+
 /* Cambio font del html para que 1rem sean 10px*/
 html {
   font-size: 62.5%;
@@ -9096,6 +9106,8 @@ html {
 
 /* LAYOUT */
 /* RESPONSIVE*/
+/*FUNCION RESPONSIVE*/
+/*LE PASAMOS UN MAP POR PARAMETRO CON VALOR DEL MIN-WIDTH PANTALLA*/
 /*VARS*/
 /* HEADER DE TODAS LAS PAGINAS */
 /* Le doy tamaño al header */
@@ -9159,7 +9171,8 @@ header {
   .sect-princ {
     width: 70rem;
     height: 15rem;
-    /* medidas al icono de lupa */ }
+    /* medidas al icono de lupa */
+    /*CAMBIO FUENTE DE LOS OPTION Y TAMAÑOD DE CONTENEDOR*/ }
     .sect-princ .lup-busq {
       width: 4.5rem;
       height: 4.5rem; }
@@ -9174,7 +9187,8 @@ header {
   .sect-princ {
     margin-top: 6rem;
     width: 90rem;
-    height: 17rem; }
+    height: 17rem;
+    /*CAMBIO ANCHO DEL CONTENEDOR DE LOS OPTION*/ }
     .sect-princ .form-select {
       width: 22rem; } }
 
@@ -9188,6 +9202,9 @@ footer {
   /* Le doy tamaño y estilo al input del email */
   /* Le cambio el color del fondo al boton de enviar que esta en el footer */
   /* Le doy medida a la imagen del footer de la carta */
+  /*CAMBIO TAMAÑO DE LOS H4 QUE ESTAN EN FOOTER*/
+  /*CAMBIO TAMAÑO DE LOS H5 QUE ESTAN EN FOOTER*/
+  /*CAMBIO TAMAÑO DE LOS P QUE ESTAN EN FOOTER*/
   /*PANTALLA > 1200px*/ }
   footer .img__logo__footer {
     background-color: #fff;
@@ -9285,73 +9302,87 @@ footer {
       width: 15rem;
       height: 15rem; } }
 
-main {
-  /* Cambio de meidas a la imagen de sucursal y a los mapas iframe */
-  /* Cambio de medidas a la imagen principal de sucursal */
+/* Cambio de meidas a la imagen de sucursal y a los mapas iframe */
+.img-sucursal, .img-sucursal-princ {
+  width: 30rem;
+  height: 30rem; }
+
+/* Cambio de medidas a la imagen principal de sucursal */
+.img-sucursal-princ {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+/*cambio widt y height del texto principal*/
+.texto-conozca {
+  width: 30rem;
+  height: 30rem; }
+
+/* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
+.text-section-sucursales {
+  width: 30rem;
+  height: 15rem; }
+
+/* le doy medidas a los iconos de telefono y ubicacion */
+.img-datos {
+  width: 3rem;
+  height: 3rem; }
+
+/*cambio medidas del h3 y le doy color al SPAN*/
+h3, .h3 {
+  font-size: 2.5rem; }
+  h3 span, .h3 span {
+    color: #0d6efd; }
+
+/*BUCLE FOR PARA QUE HAGA 2 CLASES SECTION Y LE APLIQUE LOS MISMOS MARGENES - SE FORMAN SECTION-1 Y SECTION-2*/
+.section-1 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.section-2 {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+/*PANTALLA > 992PX*/
+@media screen and (min-width: 992px) {
+  /* Cambio medidas a la imagen de sucursal y los mapas iframe */
+  .img-sucursal, .img-sucursal-princ {
+    width: 35rem;
+    height: 35rem; }
   /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
-  /* le doy medidas a los iconos de telefono y ubicacion */
-  /*PANTALLA > 992PX*/
-  /*PANTALLA > 1500PX*/ }
-  main .img-sucursal, main .img-sucursal-princ {
+  .text-section-sucursales {
     width: 30rem;
-    height: 30rem; }
-  main .img-sucursal-princ {
-    margin-top: 5rem;
-    margin-bottom: 2rem; }
-  main .texto-conozca {
+    height: 15rem;
+    /* le doy medidas a los iconos de telefono y ubicacion */ }
+    .text-section-sucursales .img-datos {
+      width: 3.5rem;
+      height: 3.5rem; }
+  /*CAMBIO FUENTE DE TODOS LOS TEXTOS*/
+  .p-texto {
+    font-size: 2.3rem; }
+  /*BUCLE FOR PARA QUE HAGA 2 CLASES SECTION Y LE APLIQUE LOS MISMOS MARGENES - SE FORMAN SECTION-1 Y SECTION-2*/
+  .section-1 {
+    margin-top: 10rem;
+    margin-bottom: 10rem; }
+  .section-2 {
+    margin-top: 10rem;
+    margin-bottom: 10rem; } }
+
+/*PANTALLA > 1500PX*/
+@media screen and (min-width: 1500px) {
+  /* cambio tamaño a la imagen de sucursal y los mapas iframe */
+  .img-sucursal, .img-sucursal-princ {
+    width: 50rem;
+    height: 50rem; }
+  /*CAMBIO ANCHO Y ALTO DEL TEXTO PRINCIPAL*/
+  .texto-conozca {
     width: 30rem;
-    height: 30rem; }
-  main .text-section-sucursales {
-    width: 30rem;
-    height: 15rem; }
-  main .img-datos {
-    width: 3rem;
-    height: 3rem; }
-  main h3, main .h3 {
-    font-size: 2.5rem; }
-    main h3 span, main .h3 span {
-      color: #0d6efd; }
-  main .section-1 {
-    margin-top: 5rem;
-    margin-bottom: 5rem; }
-  main .section-2 {
-    margin-top: 5rem;
-    margin-bottom: 5rem; }
-  @media screen and (min-width: 992px) {
-    main {
-      /* Cambio medidas a la imagen de sucursal y los mapas iframe */
-      /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */ }
-      main .img-sucursal, main .img-sucursal-princ {
-        width: 35rem;
-        height: 35rem; }
-      main .text-section-sucursales {
-        width: 30rem;
-        height: 15rem;
-        /* le doy medidas a los iconos de telefono y ubicacion */ }
-        main .text-section-sucursales .img-datos {
-          width: 3.5rem;
-          height: 3.5rem; }
-      main .p-texto {
-        font-size: 2.3rem; }
-      main .section-1 {
-        margin-top: 10rem;
-        margin-bottom: 10rem; }
-      main .section-2 {
-        margin-top: 10rem;
-        margin-bottom: 10rem; } }
-  @media screen and (min-width: 1500px) {
-    main {
-      /* cambio tamaño a la imagen de sucursal y los mapas iframe */ }
-      main .img-sucursal, main .img-sucursal-princ {
-        width: 50rem;
-        height: 50rem; }
-      main .texto-conozca {
-        width: 30rem;
-        height: 45rem; }
-      main .p-texto {
-        font-size: 2.6rem; }
-      main .titulos {
-        font-size: 3rem; } }
+    height: 45rem; }
+  /*CAMBIO FUENTE DE TODOS LOS PARRAFOS*/
+  .p-texto {
+    font-size: 2.6rem; }
+  /*CAMBIO TAMAÑO DE FUENTE DE TODOS LOS TITULOS*/
+  .titulos {
+    font-size: 3rem; } }
 
 /*PAGINA VENTA DE VEHICULOS*/
 /*PANTALLA > 1500X*/
@@ -9360,42 +9391,113 @@ main {
     width: 35rem;
     height: 36rem; } }
 
+/*Margen al cuadro de busqueda*/
 .section-busqueda {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  /*cambio tamaño de fuente al h2*/ }
   .section-busqueda .h2-sect-busq {
     font-size: 2.5rem; }
 
+/*cambio width al contenedor de autos*/
 .div-autos {
   width: 50rem; }
 
 /*PANTALLA > 992PX*/
 @media screen and (min-width: 992px) {
+  /*cambio width de contenedor autos*/
   .div-autos {
     width: 70rem; } }
 
+/**/
 /*PANTALLA > 1200PX*/
 @media screen and (min-width: 1200px) {
+  /*cambio width de contenedor autos*/
   .div-autos {
     width: 93rem; }
+  /*le doy margen izquierdo al cuadro de busqueda*/
   .section-busqueda {
-    margin-left: 5rem; }
+    margin-left: 5rem;
+    /*cambio tamaño de fuente y altura */
+    /*cambio tamaño al h2*/ }
     .section-busqueda .form-select {
       font-size: 2.3rem;
       height: 5rem; }
     .section-busqueda .h2-sect-busq {
       font-size: 3rem; }
+  /*agrando width boton busqueda*/
   .btn-busq {
     width: 13rem; } }
 
 /*PANTALLA > 1500X*/
 @media screen and (min-width: 1500px) {
+  /*cambio width contenedor autos*/
   .div-autos {
     width: 110rem; } }
 
 /*PANTALLA > 1700X*/
 @media screen and (min-width: 1700px) {
+  /*cambio div contenedor autos*/
   .div-autos {
     width: 150rem; }
+  /*agrando alto de items select y ancho*/
   .form-select {
     height: 6rem;
     width: 35rem; } }
+
+/*PAGINA CONTACTOS*/
+/*H1 PRINCIPAL*/
+.title-princ-cont {
+  font-size: 3.3rem; }
+
+/*CAMBIO MEDIDAS DEL CUADRO DE TEXTO*/
+.text-section-sucursales-cont {
+  width: 30rem;
+  height: 30rem; }
+
+/*CAMBIO MEDIDAS DE LOS TITULOS*/
+.titulos-cont {
+  font-size: 2.5rem; }
+
+/*PANTALLA > 576PX*/
+@media screen and (min-width: 576px) {
+  /*MARGENES A LOS SECTIONS DE SUCURSALES*/
+  .section-sucursal-cont {
+    margin-top: 3rem;
+    margin-bottom: 5rem; }
+  /*CAMBIO MEDIDAS DEL TITULO PRINCIPAL*/
+  .title-princ-cont {
+    font-size: 3.3rem; }
+  /*CAMBIO MEDIDAS DE TODOS LOS TITULOS*/
+  .titulos-cont {
+    font-size: 3rem; }
+  /*CAMBIO TAMAÑO DE FUENTE DE TODOS LOS PARRAFOS*/
+  .p-texto {
+    font-size: 2.2rem; } }
+
+/*PANTALLA > 992PX*/
+@media screen and (min-width: 992px) {
+  /*LE DOY MARGEN A LOS SECTION QUE CONTIENEN LAS SUCURSALES*/
+  .section-sucursal-cont {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+  /*CAMBIO TAMAÑO DE FUENTE TITULO PRINCIPAL*/
+  .title-princ-cont {
+    font-size: 3.5rem; }
+  /*CAMBIO FUENTE DE TODOS LOS TITULOS*/
+  .titulos-cont {
+    font-size: 3.2rem; }
+  /*CAMBIO TAMAÑO FUENTE DE TODOS LOS PARRAFOS*/
+  .p-texto {
+    font-size: 2.5rem; } }
+
+/*PANTALLA > 1200PX*/
+@media screen and (min-width: 1500px) {
+  /*CAMBIO TAMAÑO DE FUENTE TITULO PRINCIPAL*/
+  .title-princ-cont {
+    font-size: 3.5rem; }
+  /*CAMBIO FUENTE DE TODOS LOS TITULOS*/
+  .titulos-cont {
+    font-size: 3.2rem; }
+  /*CAMBIO TAMAÑO FUENTE DE TODOS LOS PARRAFOS*/
+  .p-texto {
+    font-size: 2.5rem; } }

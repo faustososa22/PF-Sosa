@@ -19,6 +19,7 @@
 <body> 
 
     <header class="position-sticky top-0 bg-white z-1">
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <img class="ms-3 img__logo" src="../images/logo.webp" alt="logo de la empresa">
@@ -36,8 +37,8 @@
                 </div>
             </div>
         </nav>
+
     </header>
-    <!-- FIN DEL HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
 
     <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
     <div class="container-fluid">
@@ -46,6 +47,8 @@
         <div class="row">
 
             <main class="col-12">
+
+                <!-- CARTEL DE BIENVENIDA A PAGINA -->
                 <div class="row">
                     <!-- CARTEL PRINCIPAL DE LA PAGINA -->
                     <section class=" col-12 container-fluid sct-princ-sucursales text-white d-flex flex-row justify-content-between align-items-center animate__animated animate__backInDown">
@@ -55,7 +58,6 @@
                         </article>
                         <img src="../images/llantas.webp" alt="llantas decorativas" class="llantas-presentacion">
                     </section>
-
                 </div>
 
                 <!-- Separo contenido principal en dos, buscador y autos -->
@@ -208,36 +210,40 @@
 
         </div>
     </div>
-            <!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
-<!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
-<footer class="container-fluid">
-    <div class="text-white d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
+    <!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
+    <!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
+    <footer class="container-fluid">
+        <div class="text-white d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
 
-        <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
-            <h4 class="">TODOS LOS SEGMENTOS</h4>
-            <img class="img__logo img__logo__footer mb-1" src="../images/logo.webp" alt="logo de la empresa">
-            <h5 class="mt-2">NUEVOS Y USADOS</h5>
+            <!-- BLOQUE SEGMENTOS -->
+            <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
+                <h4 class="">TODOS LOS SEGMENTOS</h4>
+                <img class="img__logo img__logo__footer mb-1" src="../images/logo.webp" alt="logo de la empresa">
+                <h5 class="mt-2">NUEVOS Y USADOS</h5>
+            </div>
+            
+            <!-- BLOQUE NEWSLETTER -->
+            <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                <h4 class="">¡Suscribíte y recibí novedades!</h4>
+                <img src="../images/carta.webp" alt="imagen de un sobre-email" class="img-ft-nw">
+                <form class="d-flex justify-content-center align-items-center form-floating mt-1">
+                    <input type="email" name="" id="" class="me-2 email-in">
+                    <button type="button" class="btn btn-primary btn-ftr">ENVIAR</button>
+                </form>
+            </div>
+            
+            <!-- BLOQUE PERMUTA E INFO -->
+            <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4 mt-xl-5">
+                <h4 class="">PERMUTAS Y FINANCIACIÓN</h4>
+                <p class="p-ftr">¿Dudas? Estamos para asesorarte.</p>
+                <p class="p-ftr">(3407)408952</p>
+                <p class="p-ftr">Juan B. Justo 1427, Ramallo (2915)</p>
+                <p class="p-ftr">E-mail: info@autosdelaplaza.com.ar</p>
+            </div>
         </div>
-        
-        <div class="d-flex flex-column justify-content-center align-items-center mb-4">
-            <h4 class="">¡Suscribíte y recibí novedades!</h4>
-            <img src="../images/carta.webp" alt="imagen de un sobre-email" class="img-ft-nw">
-            <form class="d-flex justify-content-center align-items-center form-floating mt-1">
-                <input type="email" name="" id="" class="me-2 email-in">
-                <button type="button" class="btn btn-primary btn-ftr">ENVIAR</button>
-            </form>
-        </div>
-        
-        <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4 mt-xl-5">
-            <h4 class="">PERMUTAS Y FINANCIACIÓN</h4>
-            <p class="p-ftr">¿Dudas? Estamos para asesorarte.</p>
-            <p class="p-ftr">(3407)408952</p>
-            <p class="p-ftr">Juan B. Justo 1427, Ramallo (2915)</p>
-            <p class="p-ftr">E-mail: info@autosdelaplaza.com.ar</p>
-        </div>
-    </div>
-    <p class="text-white text-center">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
-</footer>
+        <!-- COPYRIGHT -->
+        <p class="text-white text-center">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
+    </footer>
         
     
     <!-- LINKEO DE JS BOOTSTRAP Y AOS.JS -->

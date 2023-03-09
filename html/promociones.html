@@ -8,7 +8,7 @@
     <meta name="keywords" content="promo, oferta, autos, baratos, precio, auto, moto, financiacion, pagos">
     <title>Promociones | Autos de la Plaza</title>
 
-    <!-- LINKEADO EL CSS, BOOTSTRAP Y AOS.JS -->
+    <!-- LINKEADO EL CSS, ANIMATE.JS Y AOS.JS -->
     <link rel="shortcut icon" href="../images/favicon.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,9 +16,10 @@
 </head>
 
 <body>
-        <!-- HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
 
+            <!-- HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
             <header class="position-sticky top-0 bg-white z-1">
+
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container">
                         <img class="ms-3 img__logo" src="../images/logo.webp" alt="logo de la empresa">
@@ -36,12 +37,13 @@
                         </div>
                     </div>
                 </nav>
-            </header>
-            <!-- FIN DEL HEADER QUE FIGURA EN TODAS LAS PAGINAS, CONTIENE LOGO Y MENU NAVEGABLE DESORDENADO -->
 
-        <div class="container-fluid">
+            </header>
+
+            <div class="container-fluid">
 
                     <div class="row">
+
                         <!-- CARTEL PRINCIPAL DE LA PAGINA -->
                         <section class="col-12 container-fluid sct-princ-sucursales text-white d-flex flex-row justify-content-between align-items-center animate__animated animate__backInDown">
                             <article class="d-flex flex-column ms-4">
@@ -50,10 +52,13 @@
                             </article>
                             <img src="../images/llantas.webp" alt="llantas decorativas" class="llantas-presentacion">
                         </section>
+
                     </div>
-                        <!-- Autos en promocion ordenados -->
+
+                    <!-- Autos en promocion ordenados -->
                     <main class="col-12 d-flex justify-content-center align-items-center">
 
+                        <!-- CONTENEDOR DE AUTOS -->
                         <div class="row d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-center align-items-md-center mt-5 mb-5 contenedor-autos">
 
                             <div data-aos="flip-left" class="card mx-4 my-4">
@@ -142,17 +147,20 @@
         
 
                 <div class="row">
+
                     <!-- PIE DE PAGINA, VA EN TODAS LAS PAGINAS -->
                     <!-- POSICIONAMOOS LOS DIVS DEPENDIENDO EL TAMAÑO DE PANTALLA, HACEMOS DESAPARECER O APARECER ELEMENTOS -->
                     <footer class="container-fluid">
                         <div class="text-white d-flex flex-column justify-content-center align-items-center flex-md-row justify-content-md-evenly d-lg-flex flex-lg-row justify-content-lg-evenly align-items-lg-center">
 
+                            <!-- BLOQUE SEGMENTOS -->
                             <div class="d-flex flex-column align-items-center justify-content-center mt-2 mt-xl-4">
                                 <h4 class="">TODOS LOS SEGMENTOS</h4>
                                 <img class="img__logo img__logo__footer mb-1" src="../images/logo.webp" alt="logo de la empresa">
                                 <h5 class="mt-2">NUEVOS Y USADOS</h5>
                             </div>
                             
+                            <!-- BLOQUE NEWSLETTER -->
                             <div class="d-flex flex-column justify-content-center align-items-center mb-4">
                                 <h4 class="">¡Suscribíte y recibí novedades!</h4>
                                 <img src="../images/carta.webp" alt="imagen de un sobre-email" class="img-ft-nw">
@@ -162,6 +170,7 @@
                                 </form>
                             </div>
                             
+                            <!-- BLOQUE PERMUTA E INFO -->
                             <div class="d-none d-lg-flex flex-lg-column justify-content-lg-center align-items-lg-start mt-lg-4 mt-xl-5">
                                 <h4 class="">PERMUTAS Y FINANCIACIÓN</h4>
                                 <p class="p-ftr">¿Dudas? Estamos para asesorarte.</p>
@@ -170,10 +179,12 @@
                                 <p class="p-ftr">E-mail: info@autosdelaplaza.com.ar</p>
                             </div>
                         </div>
+                        <!-- COPYRIGHT -->
                         <p class="text-white text-center">Copyright 2023 Autos de La Plaza | Desarrollado por Fausto Sosa</p>
                     </footer>
+
                 </div>
-        </div>
+            </div>
 
     <!-- LINKEO DE JS BOOTSTRAP Y AOS.JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

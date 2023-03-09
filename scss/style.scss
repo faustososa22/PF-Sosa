@@ -1,6 +1,13 @@
 /* BOOTSTRAP*/
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+/*ABSTRACT*/
+/*VARIABLES*/
+@import "./abstract/variables";
+
+/*importo google fonts ROBOTO*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 
 /* BASE */
 @import "./base/reset";
@@ -14,3 +21,6 @@
 
 /*PAGINA VENTA DE VEHICULOS*/
 @import "./layout/pagventa";
+
+/*PAGINA CONTACTOS*/
+@import "./layout/pagcontacto";
