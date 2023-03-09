@@ -1,7 +1,7 @@
 {
   "name": "proyecto",
   "version": "1.0.0",
-  "description": "Proyecto Autos de la Plaza",
+  "description": "Proyecto de Desarrollo Web para autos de la Plaza, curso de Coderhouse.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

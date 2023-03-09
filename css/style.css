@@ -9094,59 +9094,6 @@ html {
           width: 100vw;
           height: 90vh; } }
 
-/* Cambio de medidas y fondo a la bienvenida de pagina */
-.sct-princ-sucursales {
-  width: 100vw;
-  background-color: #063157;
-  height: 15rem;
-  /*cambio tamaño de titulo*/
-  /* Cambio de medidas a la imagen de llantas de la bienvenida */
-  /*PANTALLA > 768PX*/
-  /*PANTALLA > 992PX*/ }
-  .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
-    font-size: 2.3rem; }
-  .sct-princ-sucursales .llantas-presentacion {
-    width: 10rem;
-    height: 10rem; }
-  @media screen and (min-width: 768px) {
-    .sct-princ-sucursales {
-      /* le cambio el tamaño a la imagen de llantas del cuadro de bienvenida */ }
-      .sct-princ-sucursales .llantas-presentacion {
-        width: 12rem;
-        height: 12rem; }
-      .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
-        font-size: 2.8rem; } }
-  @media screen and (min-width: 992px) {
-    .sct-princ-sucursales {
-      /* le cambio el tamaño a la imagen de llantas del cuadro de bienvenida */ }
-      .sct-princ-sucursales .llantas-presentacion {
-        width: 13rem;
-        height: 13rem; }
-      .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
-        font-size: 3rem; }
-      .sct-princ-sucursales .p-sect-princ {
-        font-size: 2.3rem; } }
-
-/*PANTALLA > 768PX*/
-@media screen and (min-width: 768px) {
-  /*cambio el alto del cuadro de bienvenida*/
-  .sct-princ-sucursales {
-    height: 20rem; } }
-
-/*PANTALLA > 1500PX*/
-@media screen and (min-width: 1500px) {
-  /*cambio el alto del cuadro de bienvenida*/
-  .sct-princ-sucursales {
-    height: 23rem;
-    /* cambio el tamaño a las llantas del cuadro principal de bienvenida */ }
-    .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
-      font-size: 3.5rem; }
-    .sct-princ-sucursales .p-sect-princ {
-      font-size: 2.5rem; }
-    .sct-princ-sucursales .llantas-presentacion {
-      width: 15rem;
-      height: 15rem; } }
-
 /* LAYOUT */
 /* RESPONSIVE*/
 /*VARS*/
@@ -9236,7 +9183,7 @@ header {
 footer {
   background-color: #063157;
   width: 100vw;
-  height: 36rem;
+  height: 32rem;
   /* Le doy fondo y estilo al logo del foter */
   /* Le doy tamaño y estilo al input del email */
   /* Le cambio el color del fondo al boton de enviar que esta en el footer */
@@ -9274,132 +9221,137 @@ footer {
       footer .email-in {
         width: 18rem; } }
 
-/*PANTALLA > 576PX*/
-@media screen and (min-width: 576px) {
-  /*cambiamos medidas al logo*/
-  footer {
-    height: 32rem; } }
-
 /*PANTALLA > 768PX*/
 @media screen and (min-width: 768px) {
   /*cambiamos medidas al logo*/
   footer {
-    height: 22rem;
+    height: 20rem;
     /* Le doy medida a la imagen del footer de la carta */ }
     footer .img-ft-nw {
       height: 5.5rem;
       width: 6.5rem; } }
 
-/*PANTALLA > 992PX*/
-@media screen and (min-width: 992px) {
-  /*cambiamos medidas al logo*/
-  footer {
-    height: 26rem; }
-    footer .email-in {
-      width: 20rem; } }
-
-/*PANTALLA > 1500px*/
-@media screen and (min-width: 1500px) {
-  /*cambiamos medidas al logo*/
-  footer {
-    height: 28rem; }
-    footer .email-in {
-      width: 20rem; } }
-
-/*PANTALLA > 1700px*/
-@media screen and (min-width: 1700px) {
-  /*cambiamos medidas al logo*/
-  footer {
-    height: 26rem; }
-    footer .email-in {
-      width: 20rem; } }
-
 /*PAGINA SUCURSALES*/
-/* Cambio de meidas a la imagen de sucursal y a los mapas iframe */
-.img-sucursal, .img-sucursal-princ {
-  width: 30rem;
-  height: 30rem; }
-
-/* Cambio de medidas a la imagen principal de sucursal */
-.img-sucursal-princ {
-  margin-top: 5rem;
-  margin-bottom: 2rem; }
-
-.texto-conozca {
-  width: 30rem;
-  height: 30rem; }
-
-/* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
-.text-section-sucursales {
-  width: 30rem;
-  height: 15rem; }
-
-/* le doy medidas a los iconos de telefono y ubicacion */
-.img-datos {
-  width: 3rem;
-  height: 3rem; }
-
-h3, .h3 {
-  font-size: 2.5rem; }
-  h3 span, .h3 span {
-    color: #0d6efd; }
-
-.section-1 {
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
-
-.section-2 {
-  margin-top: 5rem;
-  margin-bottom: 5rem; }
-
-/*PANTALLA > 576px*/
-@media screen and (min-width: 576px) {
-  .texto-conozca {
-    width: 30rem;
-    height: 40rem; } }
-
-/*PANTALLA > 768px*/
-@media screen and (min-width: 576px) {
-  .img-sucursal, .img-sucursal-princ {
-    width: 35rem;
-    height: 35rem; } }
-
-/*PANTALLA > 992PX*/
-@media screen and (min-width: 992px) {
-  /* Cambio medidas a la imagen de sucursal y los mapas iframe */
-  .img-sucursal, .img-sucursal-princ {
-    width: 40rem;
-    height: 40rem; }
-  /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
-  .text-section-sucursales {
-    width: 30rem;
-    height: 15rem;
-    /* le doy medidas a los iconos de telefono y ubicacion */ }
-    .text-section-sucursales .img-datos {
-      width: 3.5rem;
-      height: 3.5rem; }
-  .p-texto {
+/* Cambio de medidas y fondo a la bienvenida de pagina */
+.sct-princ-sucursales {
+  width: 100vw;
+  background-color: #063157;
+  height: 15rem;
+  /*cambio tamaño de titulo*/
+  /* Cambio de medidas a la imagen de llantas de la bienvenida */
+  /*PANTALLA > 768PX*/
+  /*PANTALLA > 992PX*/ }
+  .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
     font-size: 2.3rem; }
-  .section-1 {
-    margin-top: 10rem;
-    margin-bottom: 10rem; }
-  .section-2 {
-    margin-top: 10rem;
-    margin-bottom: 10rem; } }
+  .sct-princ-sucursales .llantas-presentacion {
+    width: 10rem;
+    height: 10rem; }
+  @media screen and (min-width: 768px) {
+    .sct-princ-sucursales {
+      /* le cambio el tamaño a la imagen de llantas del cuadro de bienvenida */ }
+      .sct-princ-sucursales .llantas-presentacion {
+        width: 12rem;
+        height: 12rem; }
+      .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
+        font-size: 2.8rem; } }
+  @media screen and (min-width: 992px) {
+    .sct-princ-sucursales {
+      /* le cambio el tamaño a la imagen de llantas del cuadro de bienvenida */ }
+      .sct-princ-sucursales .llantas-presentacion {
+        width: 13rem;
+        height: 13rem; }
+      .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
+        font-size: 3rem; }
+      .sct-princ-sucursales .p-sect-princ {
+        font-size: 2.3rem; } }
+
+/*PANTALLA > 768PX*/
+@media screen and (min-width: 768px) {
+  /*cambio el alto del cuadro de bienvenida*/
+  .sct-princ-sucursales {
+    height: 20rem; } }
 
 /*PANTALLA > 1500PX*/
 @media screen and (min-width: 1500px) {
-  /* cambio tamaño a la imagen de sucursal y los mapas iframe */
-  .img-sucursal, .img-sucursal-princ {
-    width: 50rem;
-    height: 50rem; }
-  .texto-conozca {
+  /*cambio el alto del cuadro de bienvenida*/
+  .sct-princ-sucursales {
+    height: 23rem;
+    /* cambio el tamaño a las llantas del cuadro principal de bienvenida */ }
+    .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
+      font-size: 3.5rem; }
+    .sct-princ-sucursales .p-sect-princ {
+      font-size: 2.5rem; }
+    .sct-princ-sucursales .llantas-presentacion {
+      width: 15rem;
+      height: 15rem; } }
+
+main {
+  /* Cambio de meidas a la imagen de sucursal y a los mapas iframe */
+  /* Cambio de medidas a la imagen principal de sucursal */
+  /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
+  /* le doy medidas a los iconos de telefono y ubicacion */
+  /*PANTALLA > 992PX*/
+  /*PANTALLA > 1500PX*/ }
+  main .img-sucursal, main .img-sucursal-princ {
     width: 30rem;
-    height: 45rem; }
-  .p-texto {
-    font-size: 2.6rem; }
-  .titulos {
-    font-size: 3rem; } }
+    height: 30rem; }
+  main .img-sucursal-princ {
+    margin-top: 5rem;
+    margin-bottom: 2rem; }
+  main .texto-conozca {
+    width: 30rem;
+    height: 30rem; }
+  main .text-section-sucursales {
+    width: 30rem;
+    height: 15rem; }
+  main .img-datos {
+    width: 3rem;
+    height: 3rem; }
+  main h3, main .h3 {
+    font-size: 2.5rem; }
+    main h3 span, main .h3 span {
+      color: #0d6efd; }
+  main .section-1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+  main .section-2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+  @media screen and (min-width: 992px) {
+    main {
+      /* Cambio medidas a la imagen de sucursal y los mapas iframe */
+      /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */ }
+      main .img-sucursal, main .img-sucursal-princ {
+        width: 35rem;
+        height: 35rem; }
+      main .text-section-sucursales {
+        width: 30rem;
+        height: 15rem;
+        /* le doy medidas a los iconos de telefono y ubicacion */ }
+        main .text-section-sucursales .img-datos {
+          width: 3.5rem;
+          height: 3.5rem; }
+      main .p-texto {
+        font-size: 2.3rem; }
+      main .section-1 {
+        margin-top: 10rem;
+        margin-bottom: 10rem; }
+      main .section-2 {
+        margin-top: 10rem;
+        margin-bottom: 10rem; } }
+  @media screen and (min-width: 1500px) {
+    main {
+      /* cambio tamaño a la imagen de sucursal y los mapas iframe */ }
+      main .img-sucursal, main .img-sucursal-princ {
+        width: 50rem;
+        height: 50rem; }
+      main .texto-conozca {
+        width: 30rem;
+        height: 45rem; }
+      main .p-texto {
+        font-size: 2.6rem; }
+      main .titulos {
+        font-size: 3rem; } }
 
 /*PAGINA VENTA DE VEHICULOS*/
 /*PANTALLA > 1500X*/
@@ -9447,49 +9399,3 @@ h3, .h3 {
   .form-select {
     height: 6rem;
     width: 35rem; } }
-
-/*PAGINA DE CONTACTO*/
-/*H1 PRINCIPAL*/
-.title-princ {
-  font-size: 3rem; }
-
-.text-section-sucursales {
-  width: 30rem;
-  height: 30rem; }
-
-.titulos {
-  font-size: 3rem; }
-
-/*PANTALLA > 576PX*/
-@media screen and (min-width: 576px) {
-  /*MARGENES A LOS SECTIONS DE SUCURSALES*/
-  .section-sucursal {
-    margin-top: 5rem;
-    margin-bottom: 5rem; }
-  .title-princ {
-    font-size: 3.3rem; }
-  .titulos {
-    font-size: 3rem; }
-  .p-texto {
-    font-size: 2.2rem; } }
-
-/*PANTALLA > 992PX*/
-@media screen and (min-width: 992px) {
-  .section-sucursal {
-    margin-top: 5rem;
-    margin-bottom: 5rem; }
-  .title-princ {
-    font-size: 3.5rem; }
-  .titulos {
-    font-size: 3.2rem; }
-  .p-texto {
-    font-size: 2.5rem; } }
-
-/*PANTALLA > 1200PX*/
-@media screen and (min-width: 1500px) {
-  .title-princ {
-    font-size: 3.5rem; }
-  .titulos {
-    font-size: 3.2rem; }
-  .p-texto {
-    font-size: 2.5rem; } }
