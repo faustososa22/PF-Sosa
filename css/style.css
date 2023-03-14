@@ -5,7 +5,6 @@
    * Copyright 2011-2022 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #063157;
@@ -9047,10 +9046,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-/*ABSTRACT*/
-/*VARIABLES*/
-/*VARS*/
-/*importo google fonts ROBOTO*/
 /* BASE */
 /* Reset al html */
 * {
@@ -9058,12 +9053,7 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0; }
 
-/*FUNCION RESPONSIVE*/
-/*LE PASAMOS UN MAP POR PARAMETRO CON VALOR DEL MIN-WIDTH PANTALLA*/
 /*VARS*/
-* {
-  font-family: "Roboto", sans-serif; }
-
 /* Cambio font del html para que 1rem sean 10px*/
 html {
   font-size: 62.5%;
@@ -9104,151 +9094,6 @@ html {
           width: 100vw;
           height: 90vh; } }
 
-/* LAYOUT */
-/* RESPONSIVE*/
-/*FUNCION RESPONSIVE*/
-/*LE PASAMOS UN MAP POR PARAMETRO CON VALOR DEL MIN-WIDTH PANTALLA*/
-/*VARS*/
-/* HEADER DE TODAS LAS PAGINAS */
-/* Le doy tamaño al header */
-header {
-  height: 10vh;
-  width: 100vw; }
-
-/* Cambio el tamaño de la imagen */
-.img__logo {
-  width: 8.5rem;
-  height: 8.5rem; }
-
-/*PANTALLA > 768PX*/
-@media screen and (min-width: 768px) {
-  /*cambiamos medidas al logo*/
-  .img__logo {
-    width: 9.5rem;
-    height: 9.5rem; } }
-
-/*PANTALLA > 1200PX*/
-@media screen and (min-width: 1200px) {
-  /*cambiamos medidas al logo*/
-  .img__logo {
-    width: 10.5rem;
-    height: 10.5rem; } }
-
-/*Cuadro de busqueda */
-/* DIMENSIONO EL CUADRO DE BUSQUEDA Y CAMBIO COLOR DE FONDO */
-.sect-princ {
-  height: 24rem;
-  width: 30rem;
-  background-color: #063157;
-  margin-top: 6rem;
-  /* Cambio el tamaño del auto de busqueda */
-  /* Cambio el tamaño de la lupa de busqueda */ }
-  .sect-princ .img-auto-busq {
-    width: 3rem;
-    height: 3rem; }
-  .sect-princ .lup-busq {
-    width: 3.5rem;
-    height: 3.5rem; }
-
-/*PANTALLA > 576PX*/
-@media screen and (min-width: 576px) {
-  /* Medidas al cuadro de busqueda */
-  .sect-princ {
-    width: 40rem;
-    height: 25.5rem;
-    /* medidas al icono de lupa */
-    /* Cambio el tamaño del auto de busqueda */ }
-    .sect-princ .lup-busq {
-      width: 4rem;
-      height: 4rem; }
-    .sect-princ .img-auto-busq {
-      width: 3.2rem;
-      height: 3.2rem; } }
-
-/*PANTALLA > 768PX*/
-@media screen and (min-width: 768px) {
-  /* Medidas al cuadro de busqueda */
-  .sect-princ {
-    width: 70rem;
-    height: 15rem;
-    /* medidas al icono de lupa */
-    /*CAMBIO FUENTE DE LOS OPTION Y TAMAÑOD DE CONTENEDOR*/ }
-    .sect-princ .lup-busq {
-      width: 4.5rem;
-      height: 4.5rem; }
-    .sect-princ .form-select {
-      width: 18rem;
-      height: 4.3rem;
-      font-size: 2.3rem; } }
-
-/*PANTALLA > 1200PX*/
-@media screen and (min-width: 1200px) {
-  /* Medidas al cuadro de busqueda */
-  .sect-princ {
-    margin-top: 6rem;
-    width: 90rem;
-    height: 17rem;
-    /*CAMBIO ANCHO DEL CONTENEDOR DE LOS OPTION*/ }
-    .sect-princ .form-select {
-      width: 22rem; } }
-
-/* FOOTER DE TODAS LAS PAGINAS*/
-/*  Le doy color y medidas al footer */
-footer {
-  background-color: #063157;
-  width: 100vw;
-  height: 32rem;
-  /* Le doy fondo y estilo al logo del foter */
-  /* Le doy tamaño y estilo al input del email */
-  /* Le cambio el color del fondo al boton de enviar que esta en el footer */
-  /* Le doy medida a la imagen del footer de la carta */
-  /*CAMBIO TAMAÑO DE LOS H4 QUE ESTAN EN FOOTER*/
-  /*CAMBIO TAMAÑO DE LOS H5 QUE ESTAN EN FOOTER*/
-  /*CAMBIO TAMAÑO DE LOS P QUE ESTAN EN FOOTER*/
-  /*PANTALLA > 1200px*/ }
-  footer .img__logo__footer {
-    background-color: #fff;
-    border-radius: 10rem; }
-  footer .email-in {
-    width: 15rem;
-    height: 3.8rem;
-    border-color: #063157;
-    border-radius: .5rem;
-    font-size: 2rem; }
-  footer .btn-ftr {
-    background-color: #fff !important;
-    color: #063157;
-    /* Cuando ponemos el mouse encima del boton, cambia de color */ }
-    footer .btn-ftr:hover {
-      color: #fff !important;
-      background-color: green !important; }
-  footer .img-ft-nw {
-    height: 4rem;
-    width: 5rem; }
-  footer h4, footer .h4 {
-    font-size: 2.5rem; }
-  footer h5, footer .h5 {
-    font-size: 2rem; }
-  footer p {
-    font-size: .6rem; }
-  @media screen and (min-width: 1200px) {
-    footer {
-      /*cambiamos medidas al logo*/
-      /* Le doy tamaño y estilo al input del email */ }
-      footer .email-in {
-        width: 18rem; } }
-
-/*PANTALLA > 768PX*/
-@media screen and (min-width: 768px) {
-  /*cambiamos medidas al logo*/
-  footer {
-    height: 20rem;
-    /* Le doy medida a la imagen del footer de la carta */ }
-    footer .img-ft-nw {
-      height: 5.5rem;
-      width: 6.5rem; } }
-
-/*PAGINA SUCURSALES*/
 /* Cambio de medidas y fondo a la bienvenida de pagina */
 .sct-princ-sucursales {
   width: 100vw;
@@ -9302,6 +9147,174 @@ footer {
       width: 15rem;
       height: 15rem; } }
 
+/* LAYOUT */
+/* RESPONSIVE*/
+/*VARS*/
+/* HEADER DE TODAS LAS PAGINAS */
+/* Le doy tamaño al header */
+header {
+  height: 10vh;
+  width: 100vw; }
+
+/* Cambio el tamaño de la imagen */
+.img__logo {
+  width: 8.5rem;
+  height: 8.5rem; }
+
+/*PANTALLA > 768PX*/
+@media screen and (min-width: 768px) {
+  /*cambiamos medidas al logo*/
+  .img__logo {
+    width: 9.5rem;
+    height: 9.5rem; } }
+
+/*PANTALLA > 1200PX*/
+@media screen and (min-width: 1200px) {
+  /*cambiamos medidas al logo*/
+  .img__logo {
+    width: 10.5rem;
+    height: 10.5rem; } }
+
+/*Cuadro de busqueda */
+/* DIMENSIONO EL CUADRO DE BUSQUEDA Y CAMBIO COLOR DE FONDO */
+.sect-princ {
+  height: 24rem;
+  width: 35rem;
+  background-color: #063157;
+  margin-top: 6rem;
+  /* Cambio el tamaño del auto de busqueda */
+  /* Cambio el tamaño de la lupa de busqueda */ }
+  .sect-princ .img-auto-busq {
+    width: 3rem;
+    height: 3rem; }
+  .sect-princ .lup-busq {
+    width: 3.5rem;
+    height: 3.5rem; }
+
+/*PANTALLA > 576PX*/
+@media screen and (min-width: 576px) {
+  /* Medidas al cuadro de busqueda */
+  .sect-princ {
+    width: 40rem;
+    height: 25.5rem;
+    /* medidas al icono de lupa */
+    /* Cambio el tamaño del auto de busqueda */ }
+    .sect-princ .lup-busq {
+      width: 4rem;
+      height: 4rem; }
+    .sect-princ .img-auto-busq {
+      width: 3.2rem;
+      height: 3.2rem; } }
+
+/*PANTALLA > 768PX*/
+@media screen and (min-width: 768px) {
+  /* Medidas al cuadro de busqueda */
+  .sect-princ {
+    width: 70rem;
+    height: 15rem;
+    /* medidas al icono de lupa */ }
+    .sect-princ .lup-busq {
+      width: 4.5rem;
+      height: 4.5rem; }
+    .sect-princ .form-select {
+      width: 18rem;
+      height: 4.3rem;
+      font-size: 2.3rem; } }
+
+/*PANTALLA > 1200PX*/
+@media screen and (min-width: 1200px) {
+  /* Medidas al cuadro de busqueda */
+  .sect-princ {
+    margin-top: 6rem;
+    width: 90rem;
+    height: 17rem; }
+    .sect-princ .form-select {
+      width: 22rem; } }
+
+/* FOOTER DE TODAS LAS PAGINAS*/
+/*  Le doy color y medidas al footer */
+footer {
+  background-color: #063157;
+  width: 100vw;
+  height: 36rem;
+  /* Le doy fondo y estilo al logo del foter */
+  /* Le doy tamaño y estilo al input del email */
+  /* Le cambio el color del fondo al boton de enviar que esta en el footer */
+  /* Le doy medida a la imagen del footer de la carta */
+  /*PANTALLA > 1200px*/ }
+  footer .img__logo__footer {
+    background-color: #fff;
+    border-radius: 10rem; }
+  footer .email-in {
+    width: 15rem;
+    height: 3.8rem;
+    border-color: #063157;
+    border-radius: .5rem;
+    font-size: 2rem; }
+  footer .btn-ftr {
+    background-color: #fff !important;
+    color: #063157;
+    /* Cuando ponemos el mouse encima del boton, cambia de color */ }
+    footer .btn-ftr:hover {
+      color: #fff !important;
+      background-color: green !important; }
+  footer .img-ft-nw {
+    height: 4rem;
+    width: 5rem; }
+  footer h4, footer .h4 {
+    font-size: 2.5rem; }
+  footer h5, footer .h5 {
+    font-size: 2rem; }
+  footer p {
+    font-size: .6rem; }
+  @media screen and (min-width: 1200px) {
+    footer {
+      /*cambiamos medidas al logo*/
+      /* Le doy tamaño y estilo al input del email */ }
+      footer .email-in {
+        width: 18rem; } }
+
+/*PANTALLA > 576PX*/
+@media screen and (min-width: 576px) {
+  /*cambiamos medidas al logo*/
+  footer {
+    height: 32rem; } }
+
+/*PANTALLA > 768PX*/
+@media screen and (min-width: 768px) {
+  /*cambiamos medidas al logo*/
+  footer {
+    height: 22rem;
+    /* Le doy medida a la imagen del footer de la carta */ }
+    footer .img-ft-nw {
+      height: 5.5rem;
+      width: 6.5rem; } }
+
+/*PANTALLA > 992PX*/
+@media screen and (min-width: 992px) {
+  /*cambiamos medidas al logo*/
+  footer {
+    height: 26rem; }
+    footer .email-in {
+      width: 20rem; } }
+
+/*PANTALLA > 1500px*/
+@media screen and (min-width: 1500px) {
+  /*cambiamos medidas al logo*/
+  footer {
+    height: 28rem; }
+    footer .email-in {
+      width: 20rem; } }
+
+/*PANTALLA > 1700px*/
+@media screen and (min-width: 1700px) {
+  /*cambiamos medidas al logo*/
+  footer {
+    height: 27rem; }
+    footer .email-in {
+      width: 20rem; } }
+
+/*PAGINA SUCURSALES*/
 /* Cambio de meidas a la imagen de sucursal y a los mapas iframe */
 .img-sucursal, .img-sucursal-princ {
   width: 30rem;
@@ -9310,9 +9323,8 @@ footer {
 /* Cambio de medidas a la imagen principal de sucursal */
 .img-sucursal-princ {
   margin-top: 5rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 2rem; }
 
-/*cambio widt y height del texto principal*/
 .texto-conozca {
   width: 30rem;
   height: 30rem; }
@@ -9327,13 +9339,11 @@ footer {
   width: 3rem;
   height: 3rem; }
 
-/*cambio medidas del h3 y le doy color al SPAN*/
 h3, .h3 {
   font-size: 2.5rem; }
   h3 span, .h3 span {
     color: #0d6efd; }
 
-/*BUCLE FOR PARA QUE HAGA 2 CLASES SECTION Y LE APLIQUE LOS MISMOS MARGENES - SE FORMAN SECTION-1 Y SECTION-2*/
 .section-1 {
   margin-top: 5rem;
   margin-bottom: 5rem; }
@@ -9342,12 +9352,24 @@ h3, .h3 {
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
+/*PANTALLA > 576px*/
+@media screen and (min-width: 576px) {
+  .texto-conozca {
+    width: 30rem;
+    height: 40rem; } }
+
+/*PANTALLA > 768px*/
+@media screen and (min-width: 576px) {
+  .img-sucursal, .img-sucursal-princ {
+    width: 35rem;
+    height: 35rem; } }
+
 /*PANTALLA > 992PX*/
 @media screen and (min-width: 992px) {
   /* Cambio medidas a la imagen de sucursal y los mapas iframe */
   .img-sucursal, .img-sucursal-princ {
-    width: 35rem;
-    height: 35rem; }
+    width: 40rem;
+    height: 40rem; }
   /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
   .text-section-sucursales {
     width: 30rem;
@@ -9356,10 +9378,8 @@ h3, .h3 {
     .text-section-sucursales .img-datos {
       width: 3.5rem;
       height: 3.5rem; }
-  /*CAMBIO FUENTE DE TODOS LOS TEXTOS*/
   .p-texto {
     font-size: 2.3rem; }
-  /*BUCLE FOR PARA QUE HAGA 2 CLASES SECTION Y LE APLIQUE LOS MISMOS MARGENES - SE FORMAN SECTION-1 Y SECTION-2*/
   .section-1 {
     margin-top: 10rem;
     margin-bottom: 10rem; }
@@ -9373,14 +9393,11 @@ h3, .h3 {
   .img-sucursal, .img-sucursal-princ {
     width: 50rem;
     height: 50rem; }
-  /*CAMBIO ANCHO Y ALTO DEL TEXTO PRINCIPAL*/
   .texto-conozca {
     width: 30rem;
     height: 45rem; }
-  /*CAMBIO FUENTE DE TODOS LOS PARRAFOS*/
   .p-texto {
     font-size: 2.6rem; }
-  /*CAMBIO TAMAÑO DE FUENTE DE TODOS LOS TITULOS*/
   .titulos {
     font-size: 3rem; } }
 
@@ -9391,60 +9408,47 @@ h3, .h3 {
     width: 35rem;
     height: 36rem; } }
 
-/*Margen al cuadro de busqueda*/
 .section-busqueda {
-  margin-top: 3rem;
-  /*cambio tamaño de fuente al h2*/ }
+  margin-top: 3rem; }
   .section-busqueda .h2-sect-busq {
     font-size: 2.5rem; }
 
-/*cambio width al contenedor de autos*/
 .div-autos {
   width: 50rem; }
 
 /*PANTALLA > 992PX*/
 @media screen and (min-width: 992px) {
-  /*cambio width de contenedor autos*/
   .div-autos {
     width: 70rem; } }
 
-/**/
 /*PANTALLA > 1200PX*/
 @media screen and (min-width: 1200px) {
-  /*cambio width de contenedor autos*/
   .div-autos {
     width: 93rem; }
-  /*le doy margen izquierdo al cuadro de busqueda*/
   .section-busqueda {
-    margin-left: 5rem;
-    /*cambio tamaño de fuente y altura */
-    /*cambio tamaño al h2*/ }
+    margin-left: 5rem; }
     .section-busqueda .form-select {
       font-size: 2.3rem;
       height: 5rem; }
     .section-busqueda .h2-sect-busq {
       font-size: 3rem; }
-  /*agrando width boton busqueda*/
   .btn-busq {
     width: 13rem; } }
 
 /*PANTALLA > 1500X*/
 @media screen and (min-width: 1500px) {
-  /*cambio width contenedor autos*/
   .div-autos {
     width: 110rem; } }
 
 /*PANTALLA > 1700X*/
 @media screen and (min-width: 1700px) {
-  /*cambio div contenedor autos*/
   .div-autos {
     width: 150rem; }
-  /*agrando alto de items select y ancho*/
   .form-select {
     height: 6rem;
     width: 35rem; } }
 
-/*PAGINA CONTACTOS*/
+/*PAGINA DE CONTACTO*/
 /*H1 PRINCIPAL*/
 .title-princ-cont {
   font-size: 3.3rem; }

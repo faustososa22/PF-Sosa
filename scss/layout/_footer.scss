@@ -1,12 +1,12 @@
 /*  Le doy color y medidas al footer */
 footer{
-    background-color: #063157;
+    background-color: $blue-principal;
     width: 100vw;
-    height: 32rem;
+    height: 36rem;
 
     /* Le doy fondo y estilo al logo del foter */
     .img__logo__footer{
-        background-color: #fff;
+        background-color: $blanco;
         border-radius: 10rem;
     }
 
@@ -14,19 +14,19 @@ footer{
     .email-in{
         width: 15rem;
         height: 3.8rem;
-        border-color: #063157;
+        border-color: $blue-principal;
         border-radius: .5rem;
         font-size: 2rem;
     }
 
     /* Le cambio el color del fondo al boton de enviar que esta en el footer */
     .btn-ftr{
-        background-color: #fff !important;
-        color: #063157;
+        background-color: $blanco !important;
+        color: $blue-principal;
 
         /* Cuando ponemos el mouse encima del boton, cambia de color */
         &:hover {
-            color: #fff !important;
+            color: $blanco !important;
             background-color: green !important;
         }
     }
@@ -37,15 +37,14 @@ footer{
         width: 5rem;
     }
 
-    /*CAMBIO TAMAÑO DE LOS H4 QUE ESTAN EN FOOTER*/
     h4{
         font-size: 2.5rem;
     }
-    /*CAMBIO TAMAÑO DE LOS H5 QUE ESTAN EN FOOTER*/
+
     h5{
         font-size: 2rem;
     }
-    /*CAMBIO TAMAÑO DE LOS P QUE ESTAN EN FOOTER*/
+
     p{
         font-size: .6rem;
     }
@@ -61,11 +60,19 @@ footer{
 
 }
 
+/*PANTALLA > 576PX*/
+@include responsive(map-get($breakpoints, sm)){
+    /*cambiamos medidas al logo*/
+    footer{
+        height: 32rem;
+    }
+}
+
 /*PANTALLA > 768PX*/
 @include responsive(map-get($breakpoints, md)){
     /*cambiamos medidas al logo*/
     footer{
-        height: 20rem;
+        height: 22rem;
 
         /* Le doy medida a la imagen del footer de la carta */
         .img-ft-nw{
@@ -75,6 +82,41 @@ footer{
     }
 }
 
+/*PANTALLA > 992PX*/
+@include responsive(map-get($breakpoints, lg)){
+    /*cambiamos medidas al logo*/
+    footer{
+        height: 26rem;
+
+        .email-in{
+            width: 20rem;
+        }
+    }
+}
+
+/*PANTALLA > 1500px*/
+@include responsive(map-get($breakpoints, xxl)){
+    /*cambiamos medidas al logo*/
+    footer{
+        height: 28rem;
+
+        .email-in{
+            width: 20rem;
+        }
+    }
+}
+
+/*PANTALLA > 1700px*/
+@include responsive(map-get($breakpoints, xxxl)){
+    /*cambiamos medidas al logo*/
+    footer{
+        height: 27rem;
+
+        .email-in{
+            width: 20rem;
+        }
+    }
+}
 
 
 

@@ -1,117 +1,124 @@
-//Cartel de bienvenida a pagina con descripcion
-@import "./sect-principal-paginas";
-
 
     /* Cambio de meidas a la imagen de sucursal y a los mapas iframe */
     .img-sucursal{
-    width: 30rem;
-    height: 30rem;
+        width: 30rem;
+        height: 30rem;
     }
 
-    /* Cambio de medidas a la imagen principal de sucursal */
+     /* Cambio de medidas a la imagen principal de sucursal */
     .img-sucursal-princ{
-    @extend .img-sucursal;
-    margin-top: 5rem;
-    margin-bottom: 5rem
+        @extend .img-sucursal;
+        margin-top: 5rem;
+        margin-bottom: 2rem
     }
 
-    /*cambio widt y height del texto principal*/
     .texto-conozca{
-    width: 30rem;
-    height: 30rem;
+        width: 30rem;
+        height: 30rem;
     }
 
     /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
     .text-section-sucursales{
-    width: 30rem;
-    height: 15rem;
+        width: 30rem;
+        height: 15rem;
     }
 
     /* le doy medidas a los iconos de telefono y ubicacion */
     .img-datos{
-    width: 3rem;
-    height: 3rem;
+        width: 3rem;
+        height: 3rem;
     }
 
-    /*cambio medidas del h3 y le doy color al SPAN*/
     h3{
-    font-size: 2.5rem;
+        font-size: 2.5rem;
 
-    span{
-    color: $blue;
-    }
+        span{
+            color: $blue;
+        }
     }
 
-    /*BUCLE FOR PARA QUE HAGA 2 CLASES SECTION Y LE APLIQUE LOS MISMOS MARGENES - SE FORMAN SECTION-1 Y SECTION-2*/
     @for $i from 1 through 2 {
-    .section-#{$i} {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+        .section-#{$i} {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
     }
+
+    /*PANTALLA > 576px*/
+    @include responsive(map-get($breakpoints, sm)){
+        .texto-conozca{
+            width: 30rem;
+            height: 40rem;
+        }
+        
+    }
+
+    /*PANTALLA > 768px*/
+    @include responsive(map-get($breakpoints, sm)){
+        .img-sucursal{
+            width: 35rem;
+            height: 35rem;
+        }
+        
     }
 
     /*PANTALLA > 992PX*/
     @include responsive(map-get($breakpoints, lg)){
 
     /* Cambio medidas a la imagen de sucursal y los mapas iframe */
-    .img-sucursal{
-    width: 35rem;
-    height: 35rem;
-    }
+        .img-sucursal{
+            width: 40rem;
+            height: 40rem;
+        }
 
-    /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
-    .text-section-sucursales{
-    width: 30rem;
-    height: 15rem;
+        /* Le doy medidas a los cuadros de texto para que no desborde y quede simetrico */
+        .text-section-sucursales{
+            width: 30rem;
+            height: 15rem;
 
-    /* le doy medidas a los iconos de telefono y ubicacion */
-    .img-datos{
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    }
+            /* le doy medidas a los iconos de telefono y ubicacion */
+            .img-datos{
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+        }
 
-    /*CAMBIO FUENTE DE TODOS LOS TEXTOS*/
-    .p-texto{
-    font-size: 2.3rem;
-    }
+        .p-texto{
+            font-size: 2.3rem;
+        }
 
-    /*BUCLE FOR PARA QUE HAGA 2 CLASES SECTION Y LE APLIQUE LOS MISMOS MARGENES - SE FORMAN SECTION-1 Y SECTION-2*/
-    @for $i from 1 through 2 {
-    .section-#{$i} {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-    }
-    }
+        @for $i from 1 through 2 {
+            .section-#{$i} {
+                margin-top: 10rem;
+                margin-bottom: 10rem;
+            }
+        }
+
     }
 
     /*PANTALLA > 1500PX*/
     @include responsive(map-get($breakpoints, xxl)){
-    /* cambio tamaño a la imagen de sucursal y los mapas iframe */
-    .img-sucursal{
-        width: 50rem;
-        height: 50rem;
-    }
-    /*CAMBIO ANCHO Y ALTO DEL TEXTO PRINCIPAL*/
-    .texto-conozca{
-        width: 30rem;
-        height: 45rem;
+            /* cambio tamaño a la imagen de sucursal y los mapas iframe */
+            .img-sucursal{
+                width: 50rem;
+                height: 50rem;
+            }
+            
+            .texto-conozca{
+                width: 30rem;
+                height: 45rem;
 
-    }
+            }
 
-    /*CAMBIO FUENTE DE TODOS LOS PARRAFOS*/
-    .p-texto{
-        font-size: 2.6rem;
-    }
+            .p-texto{
+                font-size: 2.6rem;
+            }
 
-    /*CAMBIO TAMAÑO DE FUENTE DE TODOS LOS TITULOS*/
-    .titulos{
-        font-size: 3rem;
-    }
-
-    }
-
-
+            .titulos{
+                font-size: 3rem;
+            }
+            
+        }
 
 
 

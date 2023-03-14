@@ -1,17 +1,14 @@
 /* BOOTSTRAP*/
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-/*ABSTRACT*/
-/*VARIABLES*/
-@import "./abstract/variables";
-
-/*importo google fonts ROBOTO*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
 
 /* BASE */
 @import "./base/reset";
 @import "./base/general";
+
+//Cartel de bienvenida a pagina con descripcion
+@import "./layout/sect-principal-paginas";
+
 
 /* LAYOUT */
 @import "./layout/pagindex";
@@ -22,5 +19,5 @@
 /*PAGINA VENTA DE VEHICULOS*/
 @import "./layout/pagventa";
 
-/*PAGINA CONTACTOS*/
+/*PAGINA DE CONTACTO*/
 @import "./layout/pagcontacto";

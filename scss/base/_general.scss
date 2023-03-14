@@ -1,10 +1,6 @@
 @import "../layout/responsive";
 @import "../abstract/variables";
 
-*{
-    font-family: $roboto;
-}
-
 /* Cambio font del html para que 1rem sean 10px*/
 html{
     font-size: 62.5%;

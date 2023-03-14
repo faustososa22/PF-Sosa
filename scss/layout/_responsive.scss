@@ -1,7 +1,3 @@
-
-/*FUNCION RESPONSIVE*/
-/*LE PASAMOS UN MAP POR PARAMETRO CON VALOR DEL MIN-WIDTH PANTALLA*/
-
 @mixin responsive($medida){
     @media screen and (min-width: $medida){
         @content;

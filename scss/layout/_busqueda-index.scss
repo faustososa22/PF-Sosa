@@ -1,8 +1,8 @@
 /* DIMENSIONO EL CUADRO DE BUSQUEDA Y CAMBIO COLOR DE FONDO */
 .sect-princ{
     height: 24rem;
-    width: 30rem;
-    background-color: #063157;
+    width: 35rem;
+    background-color: $blue-principal;
     margin-top: 6rem;
 
     /* Cambio el tamaño del auto de busqueda */
@@ -51,7 +51,6 @@
                 width: 4.5rem;
                 height: 4.5rem;
             }
-            /*CAMBIO FUENTE DE LOS OPTION Y TAMAÑOD DE CONTENEDOR*/
             .form-select{
                 width: 18rem;
                 height: 4.3rem;
@@ -69,7 +68,6 @@
             width: 90rem;
             height: 17rem;
 
-            /*CAMBIO ANCHO DEL CONTENEDOR DE LOS OPTION*/
             .form-select{
                 width: 22rem;
             }
