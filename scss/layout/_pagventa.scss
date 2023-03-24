@@ -56,12 +56,12 @@
 /*PANTALLA > 1700X*/
 @include responsive(map-get($breakpoints, xxxl)){
     .div-autos{
-        width: 150rem;
+        width: 135rem;
     }
 
     .form-select{
-        height: 6rem;
-        width: 35rem;
+        height: 4.5rem;
+        width: 30rem;
 
     }
 }

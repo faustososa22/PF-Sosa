@@ -1,9 +1,9 @@
 
-
-/*PANTALLA > 1500X*/
+/*PANTALLA > 1200X*/
 @include responsive(map-get($breakpoints, xl)){
     .card{
-        width: 35rem;
-        height: 36rem;
+        width: 33rem;
+        height: 47rem;
     }
 }
+

@@ -60,20 +60,16 @@
 @include responsive(map-get($breakpoints, xxl)){
     /*cambio el alto del cuadro de bienvenida*/
     .sct-princ-sucursales{
-        height: 23rem;
+        margin-top: .5rem;
 
-        h2{
-            font-size: 3.5rem;
+        /*margen al h2 y p*/
+        article{
+            margin-left: 1rem;
         }
 
-        .p-sect-princ{
-            font-size: 2.5rem;
-        }
-        
         /* cambio el tamaño a las llantas del cuadro principal de bienvenida */
         .llantas-presentacion{
-            width: 15rem;
-            height: 15rem;
+            margin-right: 1rem;
         }
     }
 }

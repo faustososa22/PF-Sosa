@@ -9137,15 +9137,13 @@ html {
 @media screen and (min-width: 1500px) {
   /*cambio el alto del cuadro de bienvenida*/
   .sct-princ-sucursales {
-    height: 23rem;
+    margin-top: .5rem;
+    /*margen al h2 y p*/
     /* cambio el tamaño a las llantas del cuadro principal de bienvenida */ }
-    .sct-princ-sucursales h2, .sct-princ-sucursales .h2 {
-      font-size: 3.5rem; }
-    .sct-princ-sucursales .p-sect-princ {
-      font-size: 2.5rem; }
+    .sct-princ-sucursales article {
+      margin-left: 1rem; }
     .sct-princ-sucursales .llantas-presentacion {
-      width: 15rem;
-      height: 15rem; } }
+      margin-right: 1rem; } }
 
 /* LAYOUT */
 /* RESPONSIVE*/
@@ -9262,9 +9260,9 @@ footer {
     height: 4rem;
     width: 5rem; }
   footer h4, footer .h4 {
-    font-size: 2.5rem; }
+    font-size: 2.2rem; }
   footer h5, footer .h5 {
-    font-size: 2rem; }
+    font-size: 1.7rem; }
   footer p {
     font-size: .6rem; }
   @media screen and (min-width: 1200px) {
@@ -9402,11 +9400,11 @@ h3, .h3 {
     font-size: 3rem; } }
 
 /*PAGINA VENTA DE VEHICULOS*/
-/*PANTALLA > 1500X*/
+/*PANTALLA > 1200X*/
 @media screen and (min-width: 1200px) {
   .card {
-    width: 35rem;
-    height: 36rem; } }
+    width: 33rem;
+    height: 47rem; } }
 
 .section-busqueda {
   margin-top: 3rem; }
@@ -9443,10 +9441,10 @@ h3, .h3 {
 /*PANTALLA > 1700X*/
 @media screen and (min-width: 1700px) {
   .div-autos {
-    width: 150rem; }
+    width: 135rem; }
   .form-select {
-    height: 6rem;
-    width: 35rem; } }
+    height: 4.5rem;
+    width: 30rem; } }
 
 /*PAGINA DE CONTACTO*/
 /*H1 PRINCIPAL*/
